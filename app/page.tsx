@@ -1,3 +1,9 @@
+import Content from "./Components/Content";
+
 export default function Home() {
-  return <main></main>;
+  return (
+  <main>
+    <Content />
+  </main>
+  );
 }
