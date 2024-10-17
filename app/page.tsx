@@ -8,7 +8,6 @@ export default function Home() {
       <Drawer2eb />
       <Content />
       <Footer />
-      
     </main>
   );
 }
