@@ -1,12 +1,10 @@
-import Content from "./Components/Content";
-import Drawer2eb from "./Components/Drawer2eb";
 import Footer from "./Components/Footer";
+import PlaceholderContent from "./Components/PlaceholderContent";
 
 export default function Home() {
   return (
     <main>
-      <Drawer2eb />
-      <Content />
+      <PlaceholderContent />
       <Footer />
     </main>
   );
