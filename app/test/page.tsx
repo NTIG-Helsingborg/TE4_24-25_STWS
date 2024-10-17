@@ -1,10 +1,15 @@
 import React from "react";
-import Drawer from "../Components/Drawer";
+import Footer from "../Components/Footer";
+import Drawer2eb from "../Components/Drawer2eb";
 
 const test = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <Drawer />
+    <div>
+      {
+        //<Navigation />}
+      }
+      <Drawer2eb />
+      <Footer />
     </div>
   );
 };

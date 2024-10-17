@@ -4,6 +4,7 @@ import React from "react";
 interface BtnProps {
   action: () => void;
   text: string;
+  class?: string;
 }
 
 const Button = ({ action, text }: BtnProps) => {

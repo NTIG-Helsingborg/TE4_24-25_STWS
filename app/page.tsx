@@ -1,10 +1,10 @@
+import Drawer2eb from "./Components/Drawer2eb";
 import Footer from "./Components/Footer";
-import Navigation from "./Components/Navigation";
 
 export default function Home() {
   return (
     <main>
-      <Navigation />
+      <Drawer2eb />
       <Footer />
     </main>
   );
