@@ -1,31 +1,37 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const Drawer2eb = () => {
+interface DrawerProps {
+  children: React.ReactNode;
+}
+
+const Drawer = ({ children }: DrawerProps) => {
   return (
     <div className="drawer lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content">
-        {/* Page content here */}
+
+      {/* Main Content Area */}
+      <div className="drawer-content flex flex-col">
         <label
           htmlFor="my-drawer-2"
-          className="btn btn-outline rounded-none border-none drawer-button lg:hidden"
+          className="fixed top-0 left-0 m-4 btn btn-outline rounded-none border-none drawer-button lg:hidden"
         >
           <GiHamburgerMenu />
           Menu
         </label>
+
+        {/* Dynamic Content passed as children */}
+        <div className="flex-1 p-6">{children}</div>
       </div>
+
+      {/* Sidebar (Drawer) */}
       <div className="drawer-side">
-        <label
-          htmlFor="my-drawer-2"
-          aria-label="close sidebar"
-          className="drawer-overlay"
-        ></label>
-        <div className="bg-gray-300  min-h-full w-44 p-4 text-gray-900">
+        <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
+        <div className="bg-gray-300 min-h-full w-44 p-4 text-gray-900">
           <a className="protest-strike-regular block mb-2">Placeholder</a>
-          <hr className="bg-gray 900" />
-          <ul className=" fenix-regular">
-            {/* Sidebar content here */}
+          <hr className="bg-gray-900" />
+          <ul className="fenix-regular">
+            {/* Sidebar content */}
             <li>
               <a className="">Home</a>
             </li>
@@ -45,4 +51,4 @@ const Drawer2eb = () => {
   );
 };
 
-export default Drawer2eb;
+export default Drawer;
