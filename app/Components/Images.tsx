@@ -9,10 +9,10 @@ const temp_arr = [Assets]
 const Images = () => {
   return (
     <>
-    <div className="flex basis-1/3 justify-end">
+    <div className="flex md:justify-end sm:justify-center">
       {
-        temp_arr.map((chh)=>{
-          return <Image className=" w-10/12 h-auto" src={chh} alt=""/>
+        temp_arr.map((imgsrc)=>{
+          return <Image className="md:w-10/12 md:object-scale-down lg:object-cover" src={imgsrc} alt=""/>
         })
       }
         

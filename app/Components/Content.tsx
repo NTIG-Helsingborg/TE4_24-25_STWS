@@ -6,46 +6,49 @@ import Read from "./Read";
 import Images from "./Images";
 
 const Content = async () => {
-
   return (
     <>
-    <div className="m-8 mr-20 ml-64">
-      <Title title="content"/>
+      <div className="m-8">
+        {/* Page title */}
+        <Title title="content" />
 
-      <div className="flex flex-row mt-8 relative">
+        {/* Main content section */}
+        <div className="flex md:flex-row mt-8 space-y-8 md:space-y-0 md:space-x-8 flex-col-reverse">
+          {/* About Text */}
+          <AboutText
+            aboutText="
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            This is text about the website.
+            "
+          > <Read read="read" /> </AboutText>
+          
+          {/* Image section */}
+          <Images />
 
-        <AboutText aboutText="
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website
-        this it text about the website"/>
+          {/* Read section */}
+          
+        </div>
 
-        <Read read="read"/>
-
-        <Images />
-
+        {/* Bread text section */}
+        <BreadText breadText="This is the bread text" />
       </div>
-
-      <BreadText breadText="this it the bread text"/>
-
-    </div>
     </>
-  
   );
 };
 
