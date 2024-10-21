@@ -1,16 +1,12 @@
-import React from "react";
 import Footer from "../Components/Footer";
-import Hero from "../Components/Hero";
+import Modal from "../Components/Modal";
 import PlaceholderContent from "../Components/PlaceholderContent";
 
-const test = () => {
+export default function Home() {
   return (
-    <div>
-      <Hero />
+    <main>
       <PlaceholderContent />
       <Footer />
-    </div>
+    </main>
   );
-};
-
-export default test;
+}

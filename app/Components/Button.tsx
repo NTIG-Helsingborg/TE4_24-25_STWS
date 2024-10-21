@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
+import { IconType } from "react-icons";
 
 interface BtnProps {
   action: () => void;
-  text: string;
+  text?: string;
   class?: string;
+  image?: IconType;
 }
 
 const Button = ({ action, text }: BtnProps) => {

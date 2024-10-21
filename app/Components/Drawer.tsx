@@ -28,15 +28,19 @@ const Drawer = ({ children }: DrawerProps) => {
       <div className="drawer-side">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
         <div className="bg-gray-300 min-h-full w-44 p-4 text-gray-900">
-          <a className="protest-strike-regular block mb-2">Placeholder</a>
+          <h1 className="protest-strike-regular block mb-2">Placeholder</h1>
           <hr className="bg-gray-900" />
           <ul className="fenix-regular">
             {/* Sidebar content */}
             <li>
-              <a className="">Home</a>
+              <a href="/" className="">
+                Home
+              </a>
             </li>
             <li>
-              <a className="">APOD</a>
+              <a href="/test" className="">
+                Test
+              </a>
             </li>
             <li>
               <a className="">Twacking</a>

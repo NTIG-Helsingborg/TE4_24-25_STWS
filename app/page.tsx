@@ -1,11 +1,16 @@
+import React from "react";
 import Footer from "./Components/Footer";
+import Hero from "./Components/Hero";
 import PlaceholderContent from "./Components/PlaceholderContent";
 
-export default function Home() {
+const test = () => {
   return (
-    <main>
+    <div>
+      <Hero />
       <PlaceholderContent />
       <Footer />
-    </main>
+    </div>
   );
-}
+};
+
+export default test;
