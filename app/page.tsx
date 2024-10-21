@@ -1,9 +1,9 @@
-import Content from "./Components/Content";
+import Randomizer from "./Components/randomizer";
 
 export default function Home() {
   return (
-  <main>
-    <Content />
-  </main>
+    <main>
+      <Randomizer />
+    </main>
   );
 }
