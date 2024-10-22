@@ -2,8 +2,11 @@
 import React from "react";
 import Card from "./Card";
 import { useFavoriteItems } from "@/app/Hooks/useFavoriteItems";
+import "@/api_links";
 
 const CardList = () => {
+  api_links.starwars("planets", { type: "all" });
+
   const { favItems, updateFavItems } = useFavoriteItems();
   return (
     <>
@@ -12,7 +15,7 @@ const CardList = () => {
           <Card
             itemID="planet:1"
             title="Tatooine"
-            description="Description for Card 1"
+            description={api_links.starwars("planets", { type: "all" })}
             favItems={favItems}
             updateFavItems={updateFavItems}
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
