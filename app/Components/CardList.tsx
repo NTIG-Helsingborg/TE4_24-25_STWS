@@ -1,56 +1,57 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Card from "./Card";
+import { useFavoriteItems } from "@/app/Hooks/useFavoriteItems";
 
 const CardList = () => {
-  const [favItems, setFavItems] = useState<string[]>([]);
-
-  useEffect(() => {
-    // Get the value from local storage if it exists, otherwise set to an empty array
-    const savedFav = localStorage.getItem("savedFav");
-    if (savedFav) {
-      try {
-        const loadedItems = JSON.parse(savedFav); // Parse only if valid JSON
-        setFavItems(Array.isArray(loadedItems) ? loadedItems : []);
-      } catch (error) {
-        console.error("Error parsing JSON from localStorage:", error);
-      }
-    }
-  }, []);
-
-  // Function to update favorite items
-  const updateFavItems = (itemID: string) => {
-    setFavItems((prevFavItems) => {
-      const updatedFavItems = prevFavItems.includes(itemID)
-        ? prevFavItems.filter((id) => id !== itemID) // Remove if already in favorites
-        : [...prevFavItems, itemID]; // Add to favorites if not already present
-      localStorage.setItem("savedFav", JSON.stringify(updatedFavItems));
-      console.log(updatedFavItems); // Log the updated favorites
-      return updatedFavItems; // Return the updated state
-    });
-  };
-
-  // Example items with titles and descriptions
-  const items = [
-    { id: "1", title: "Card 1", description: "Description for Card 1" },
-    { id: "2", title: "Card 2", description: "Description for Card 2" },
-    { id: "3", title: "Card 3", description: "Description for Card 3" },
-    { id: "4", title: "Card 4", description: "Description for Card 4" },
-  ];
-
+  const { favItems, updateFavItems } = useFavoriteItems();
   return (
-    <div className="flex flex-wrap gap-4">
-      {items.map((item) => (
-        <Card
-          key={item.id}
-          itemID={item.id}
-          favItems={favItems}
-          updateFavItems={updateFavItems}
-          title={item.title}
-          description={item.description}
-        />
-      ))}
-    </div>
+    <>
+      <div className="container mx-auto p-4 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <Card
+            itemID="planet:1"
+            title="Tatooine"
+            description="Description for Card 1"
+            favItems={favItems}
+            updateFavItems={updateFavItems}
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          />
+          <Card
+            itemID="planet:2"
+            title="Courosant"
+            description="Description for Card 2"
+            favItems={favItems}
+            updateFavItems={updateFavItems}
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          />
+          <Card
+            itemID="planet:3"
+            title="Naboo"
+            description="Description for Card 3"
+            favItems={favItems}
+            updateFavItems={updateFavItems}
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          />
+          <Card
+            itemID="planet:4"
+            title="Geonosis"
+            description="Description for Card 4"
+            favItems={favItems}
+            updateFavItems={updateFavItems}
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          />
+          <Card
+            itemID="planet:5"
+            title="Mustafar"
+            description="Description for Card 5"
+            favItems={favItems}
+            updateFavItems={updateFavItems}
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          />
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -1,14 +1,14 @@
-// components/Card.tsx
 import React from "react";
 import { CiStar } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 
 interface CardProps {
-  itemID: string; // Unique ID for each item
+  itemID: string;
   favItems: string[]; // Array of favorite item IDs
   updateFavItems: (itemID: string) => void; // Function to update favorite items
-  title: string; // Title for each card
-  description: string; // Description for each card
+  title: string; // Title for the card
+  description: string; // Description for the card
+  src: string; //image
 }
 
 const Card = ({
@@ -17,17 +17,14 @@ const Card = ({
   updateFavItems,
   title,
   description,
+  src,
 }: CardProps) => {
-  // Determine if the item is favorited
   const isFavorited = favItems.includes(itemID);
 
   return (
-    <div className="card bg-base-100 image-full w-64 shadow-xl">
+    <div className="card bg-base-100 image-full  shadow-xl">
       <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Item"
-        />
+        <img src={src} alt="Item" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
