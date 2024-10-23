@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
+import sampleData from "@/the_file_tm.json";
 
 // Define the type for the data items
 interface DataItem {
@@ -10,13 +11,7 @@ interface DataItem {
   name: string;
 }
 
-const data: DataItem[] = [
-  { id: 1, name: "Apple" },
-  { id: 2, name: "Banana" },
-  { id: 3, name: "Cherry" },
-  { id: 4, name: "Date" },
-  { id: 5, name: "Elderberry" },
-];
+const data: DataItem[] = [];
 
 const SearchBar = () => {
   const router = useRouter();
@@ -38,7 +33,7 @@ const SearchBar = () => {
   // Optionally, a function to handle search button click or "Enter" key press
   const handleSearch = () => {
     if (texts) {
-      router.push(`/app?search=${texts}`);
+      router.push(`/the_file_tm.json?search=${texts}`);
     }
   };
 
