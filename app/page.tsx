@@ -1,5 +1,3 @@
-import Randomizer from "./Components/Randomizer";
-import SearchBar from "./Components/SearchBar";
 import React from "react";
 import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
@@ -14,5 +12,3 @@ const test = () => {
     </div>
   );
 };
-
-export default test;
