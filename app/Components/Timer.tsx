@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export default function Timer() {
   const [countdown, setCountdown] = useState(0); // Countdown starts at 0 seconds
@@ -8,7 +8,7 @@ export default function Timer() {
     // Countdown logic
     const countdownInterval = setInterval(() => {
       setCountdown((prevCountdown) => {
-        if (prevCountdown < 10) {
+        if (prevCountdown < 3) {
           return prevCountdown + 1;
         } else {
           return 0; // Reset the countdown when it reaches 10

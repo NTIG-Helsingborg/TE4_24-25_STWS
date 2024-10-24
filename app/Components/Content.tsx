@@ -36,13 +36,15 @@ const Content = async () => {
             This is text about the website.
             This is text about the website.
             "
-          > <Read read="read" /> </AboutText>
-          
+          >
+            {" "}
+            <Read read="read" />{" "}
+          </AboutText>
+
           {/* Image section */}
           <Images />
 
           {/* Read section */}
-          
         </div>
 
         {/* Bread text section */}

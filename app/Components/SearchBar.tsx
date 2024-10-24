@@ -4,15 +4,24 @@ import React, { useState, useEffect } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
 import sampleData from "@/the_file_tm.json";
-
 // Define the type for the data items
 interface DataItem {
   id: number;
   name: string;
 }
-
-const data: DataItem[] = [];
-
+let global_timer = 0;
+const data: DataItem[] = Object.entries(
+  sampleData as unknown as { [id: string]: [string, number][] }
+)
+  .map((val) => {
+    return val[1].map((ival) => {
+      return {
+        id: global_timer++,
+        name: ival[0], //`${val[0]}:${ival[0]}:${ival[1]}`,
+      };
+    });
+  })
+  .flat(2);
 const SearchBar = () => {
   const router = useRouter();
   const [texts, setTexts] = useState<string>(""); // Search query from the user

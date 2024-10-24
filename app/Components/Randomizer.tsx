@@ -1,26 +1,47 @@
 "use client";
-import React, { useState } from "react";
-
-import Button from "./RandomButton";
+import { useState, useEffect } from "react";
 
 const Randomizer = () => {
-  const [count, setCount] = useState<number>(0); //initserar state variablen med ett värde av 0
+  const [count, setCount] = useState<number>(0); // Initialize count state variable with a value of 0
+  const [countdown, setCountdown] = useState(0); // Countdown starts at 0 seconds
 
+  // Function to return a random number from the array
   function gamba() {
-    const Randomizer_arr: number[] = [1, 2, 3, 42, 5]; //väljer ett random tal från denna arrayn
-    return Randomizer_arr[Math.floor(Math.random() * Randomizer_arr.length)]; //ger tillbaka ett random värde
+    const Randomizer_arr: number[] = [1, 2, 3, 42, 5]; // Array of numbers to choose from
+    return Randomizer_arr[Math.floor(Math.random() * Randomizer_arr.length)]; // Returns a random value
   }
 
   // Function to handle the click event
   const handleClick = () => {
-    // Update the count state by setting it to a random number from gamba()
-    setCount(gamba()); //updaterar count variablen med vad gamba funktionen
+    setCount(gamba()); // Update the count variable with the random value from gamba()
   };
+
+  useEffect(() => {
+    // Countdown logic
+    const countdownInterval = setInterval(() => {
+      setCountdown((prevCountdown) => {
+        if (prevCountdown < 3) {
+          return prevCountdown + 1; // Increment countdown
+        } else {
+          setCount(gamba()); // Choose a new random number when countdown resets
+          return 0; // Reset the countdown when it reaches 3
+        }
+      });
+    }, 1000); // Increment every second (1000ms)
+
+    return () => {
+      clearInterval(countdownInterval); // Clear the countdown interval when the component unmounts
+    };
+  }, []); // Empty dependency array means this runs once when the component mounts
 
   return (
     <>
-      <Button action={handleClick} /> {/*tar in en funktion som sker onClick*/}
+      <div>
+        {/* Displaying the countdown */}
+        <h1>Countdown: {countdown} seconds</h1>
+      </div>
       <p className="py-4">The number is {count}</p>
+      <button onClick={handleClick}>Get Random Number</button>
     </>
   );
 };

@@ -12,3 +12,5 @@ const test = () => {
     </div>
   );
 };
+
+export default test;
