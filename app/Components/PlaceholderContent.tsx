@@ -4,14 +4,13 @@ import SearchBar from "./SearchBar";
 import Randomizer from "./Randomizer";
 import CardList from "./CardList";
 import Timer from "./Timer";
+import ParentComponent from "./ParentComponent";
 
 const PlaceholderContent = () => {
   return (
     <>
       <Drawer>
-        <SearchBar />
-        <Randomizer />
-        <CardList />
+        <ParentComponent />
       </Drawer>
     </>
   );

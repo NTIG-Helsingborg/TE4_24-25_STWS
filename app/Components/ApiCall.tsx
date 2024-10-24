@@ -1,5 +1,3 @@
-// Ensure no 'use client' directive here - this is a Server Component
-
 import { notFound } from "next/navigation";
 import "@/api_links";
 

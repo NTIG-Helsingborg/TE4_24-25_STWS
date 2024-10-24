@@ -1,6 +1,4 @@
 import React from "react";
-import { CiStar } from "react-icons/ci";
-import { FaStar } from "react-icons/fa";
 import ApiCall from "./ApiCall";
 import FavoriteButton from "./FavoriteButton";
 

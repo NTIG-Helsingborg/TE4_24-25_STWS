@@ -1,47 +1,55 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react"; // Import useRef
+import sampleData from "@/the_file_tm.json";
+import Button from "./Button";
+import { updateCard } from "@/app/Components/ServerAction"; // Import the server action
 
+// Sample data generation logic
+const data = Object.entries(
+  sampleData as unknown as { [id: string]: [string, number][] }
+)
+  .map(([key, values]) => values.map(([_, id]) => `${key}:${id}`))
+  .flat(2);
+
+// Randomizer component definition
 const Randomizer = () => {
-  const [count, setCount] = useState<number>(0); // Initialize count state variable with a value of 0
-  const [countdown, setCountdown] = useState(0); // Countdown starts at 0 seconds
+  const [count, setCount] = useState<string>("");
+  const [countdown, setCountdown] = useState<number>(0);
+  const countdownRef = useRef<number>(0); // Use a ref for countdown
 
-  // Function to return a random number from the array
-  function gamba() {
-    const Randomizer_arr: number[] = [1, 2, 3, 42, 5]; // Array of numbers to choose from
-    return Randomizer_arr[Math.floor(Math.random() * Randomizer_arr.length)]; // Returns a random value
-  }
+  const gamba = () => data[Math.floor(Math.random() * data.length)];
 
-  // Function to handle the click event
-  const handleClick = () => {
-    setCount(gamba()); // Update the count variable with the random value from gamba()
+  const handleClick = async () => {
+    const newCount = gamba();
+    setCount(newCount);
+    await updateCard(newCount); // Call the server action and await its completion
   };
 
   useEffect(() => {
-    // Countdown logic
     const countdownInterval = setInterval(() => {
-      setCountdown((prevCountdown) => {
-        if (prevCountdown < 3) {
-          return prevCountdown + 1; // Increment countdown
-        } else {
-          setCount(gamba()); // Choose a new random number when countdown resets
-          return 0; // Reset the countdown when it reaches 3
-        }
-      });
-    }, 1000); // Increment every second (1000ms)
+      countdownRef.current += 1; // Increment ref value
+      setCountdown(countdownRef.current); // Update state to trigger re-render
+
+      if (countdownRef.current > 4) {
+        const newCount = gamba();
+        setCount(newCount); // Update state with the new count
+        updateCard(newCount); // Call server action
+        countdownRef.current = 0; // Reset countdown ref
+      }
+    }, 1000);
 
     return () => {
-      clearInterval(countdownInterval); // Clear the countdown interval when the component unmounts
+      clearInterval(countdownInterval); // Cleanup on unmount
     };
-  }, []); // Empty dependency array means this runs once when the component mounts
+  }, []);
 
   return (
     <>
       <div>
-        {/* Displaying the countdown */}
         <h1>Countdown: {countdown} seconds</h1>
       </div>
-      <p className="py-4">The number is {count}</p>
-      <button onClick={handleClick}>Get Random Number</button>
+      <p>{count}</p>
+      <Button action={handleClick} text="click me" />
     </>
   );
 };

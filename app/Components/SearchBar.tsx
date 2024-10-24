@@ -22,6 +22,7 @@ const data: DataItem[] = Object.entries(
     });
   })
   .flat(2);
+
 const SearchBar = () => {
   const router = useRouter();
   const [texts, setTexts] = useState<string>(""); // Search query from the user
