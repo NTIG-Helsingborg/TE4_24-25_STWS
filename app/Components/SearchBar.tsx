@@ -30,9 +30,11 @@ const SearchBar = () => {
   // Automatically filter results as the user types
   useEffect(() => {
     if (texts) {
-      const filteredResults = data.filter((item) =>
-        item.name.toLowerCase().includes(texts.toLowerCase())
-      );
+      const filteredResults = data
+        .filter((item) => item.name.toLowerCase().includes(texts.toLowerCase()))
+        .filter((_, filter_idx) => {
+          return filter_idx < 10;
+        });
       setResults(filteredResults);
     } else {
       setResults([]); // Clear results if no input
@@ -69,7 +71,7 @@ const SearchBar = () => {
         <FaMagnifyingGlass aria-hidden="true" />
       </button>
       {texts && (
-        <div className="absolute mt-1 bg-white border rounded-md w-full z-10">
+        <div className="absolute mt-1 bg-white border rounded-md w-full z-50">
           {results.length > 0 ? (
             results.map((result) => (
               <div key={result.id} className="p-2 hover:bg-gray-100">
