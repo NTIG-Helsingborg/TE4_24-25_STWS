@@ -34,18 +34,6 @@ const CardList = () => {
             itemID="people:2"
             src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
           />
-          <Card
-            itemID="planets:1"
-            src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
-          />
-          <Card
-            itemID="planets:1"
-            src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
-          />
-          <Card
-            itemID="planets:1"
-            src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
-          />
         </div>
       </div>
     </>
