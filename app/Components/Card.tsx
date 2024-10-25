@@ -3,35 +3,28 @@ import ApiCall from "./ApiCall";
 import FavoriteButton from "./FavoriteButton";
 
 interface CardProps {
+  name: string;
   itemID: string;
   favItems?: string[]; // Array of favorite item IDs
   updateFavItems?: (itemID: string) => void; // Function to update favorite items
   src: string; //image
+  climate: string;
 }
 
-const Card = ({ itemID, src }: CardProps) => {
+const Card = ({ itemID, src, name, climate }: CardProps) => {
   //const isFavorited = favItems.includes(itemID);
-  type catagory =
-    | "people"
-    | "planets"
-    | "films"
-    | "species"
-    | "vehicles"
-    | "starships";
-  const id = itemID;
-
-  // Split the string by the colon
-  const [Catagory, tag] = id.split(":") as [catagory, string];
-
-  // Convert planetId to a number
-  const idTag = parseInt(tag);
-
-  console.log(Catagory); // "planet"
-  console.log(idTag); // 1
 
   return (
     <>
-      <ApiCall params={{ catagory: Catagory, id: idTag }} src={src} />
+      <div className="card bg-base-100 image-full shadow-xl">
+        <figure>
+          <img src={src} alt="Item" />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">{name}</h2>
+          <p>{climate}</p>
+        </div>
+      </div>
       <FavoriteButton itemID={itemID} />
     </>
   );

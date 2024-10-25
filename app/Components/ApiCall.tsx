@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import "@/api_links";
 import ClientCard from "./ClientCard";
+import Card from "./Card";
 
 interface Post {
   id: number;
@@ -81,5 +82,9 @@ export default async function ApiCall({
     return <div>Post not found</div>;
   }
 
-  return <div></div>;
+  return (
+    <div>
+      <Card name={post.name} src={src} itemID="a" climate={post.climate}></Card>
+    </div>
+  );
 }

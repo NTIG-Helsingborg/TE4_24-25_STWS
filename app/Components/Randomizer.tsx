@@ -49,11 +49,7 @@ const Randomizer = () => {
       <div>
         <h1>Countdown: {countdown} seconds</h1>
       </div>
-      <p>{count}</p>¨
-      <Converter
-        itemID={count}
-        src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
-      />
+      <p>{count}</p>
       <Button action={handleClick} text="click me" />
     </>
   );

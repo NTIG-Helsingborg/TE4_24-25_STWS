@@ -1,17 +1,17 @@
 import React from "react";
 
 import Converter from "./Converter";
+import ApiCall from "./ApiCall";
+import Card from "./Card";
+import { getMessage } from "./ServerAction";
 
-interface DisplayProps {
-  value: string; // Type the prop
-}
-
-const Display = ({ value }: DisplayProps) => {
+const Display = async () => {
+  const count = await getMessage();
   return (
     <div>
       <Converter
-        itemID={value || "planets:1"}
-        src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
+        itemID={count}
+        src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.pn"
       />
     </div>
   );

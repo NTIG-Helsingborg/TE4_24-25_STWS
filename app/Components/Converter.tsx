@@ -1,7 +1,5 @@
-"use client";
 import React from "react";
-
-import ClientCard from "./ClientCard";
+import ApiCall from "./ApiCall";
 
 interface CardProps {
   itemID: string;
@@ -29,7 +27,13 @@ const Converter = ({ itemID, src }: CardProps) => {
 
   return (
     <>
-      <ClientCard src={src} catagory={Catagory} id={idTag} />
+      {/*<ClientCard src={src} catagory={Catagory} id={idTag} />*/}
+      <ApiCall
+        params={{ id: idTag, catagory: Catagory }}
+        src={
+          "https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
+        }
+      />
     </>
   );
 };
