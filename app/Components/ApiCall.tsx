@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import "@/api_links";
+import ClientCard from "./ClientCard";
 
 interface Post {
   id: number;
@@ -65,11 +66,10 @@ export async function generateMetadata({
 
 export default async function ApiCall({
   params,
-  children,
   src,
 }: {
   params: { id: number; catagory: Catagory };
-  children: React.ReactNode;
+
   src: string;
 }) {
   const post = await getPost(params.catagory, params.id).catch(() => {
@@ -81,16 +81,5 @@ export default async function ApiCall({
     return <div>Post not found</div>;
   }
 
-  return (
-    <div className="card bg-base-100 image-full shadow-xl">
-      <figure>
-        <img src={src} alt="Item" />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">{post.name}</h2>
-        <p>{post.climate}</p>
-        <div className="card-actions justify-end">{children}</div>
-      </div>
-    </div>
-  );
+  return <div></div>;
 }

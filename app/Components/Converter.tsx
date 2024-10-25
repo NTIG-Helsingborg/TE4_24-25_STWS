@@ -1,15 +1,13 @@
+"use client";
 import React from "react";
-import ApiCall from "./ApiCall";
-import FavoriteButton from "./FavoriteButton";
+
+import ClientCard from "./ClientCard";
 
 interface CardProps {
   itemID: string;
-  favItems?: string[]; // Array of favorite item IDs
-  updateFavItems?: (itemID: string) => void; // Function to update favorite items
   src: string; //image
 }
-
-const Card = ({ itemID, src }: CardProps) => {
+const Converter = ({ itemID, src }: CardProps) => {
   //const isFavorited = favItems.includes(itemID);
   type catagory =
     | "people"
@@ -31,10 +29,9 @@ const Card = ({ itemID, src }: CardProps) => {
 
   return (
     <>
-      <ApiCall params={{ catagory: Catagory, id: idTag }} src={src} />
-      <FavoriteButton itemID={itemID} />
+      <ClientCard src={src} catagory={Catagory} id={idTag} />
     </>
   );
 };
 
-export default Card;
+export default Converter;

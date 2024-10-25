@@ -1,5 +1,6 @@
 import React from "react";
-import Card from "./Card";
+
+import Converter from "./Converter";
 
 interface DisplayProps {
   value: string; // Type the prop
@@ -8,8 +9,8 @@ interface DisplayProps {
 const Display = ({ value }: DisplayProps) => {
   return (
     <div>
-      <Card
-        itemID={value || "planet:1"}
+      <Converter
+        itemID={value || "planets:1"}
         src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
       />
     </div>

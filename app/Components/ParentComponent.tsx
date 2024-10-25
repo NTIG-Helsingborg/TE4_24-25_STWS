@@ -9,7 +9,6 @@ const ParentComponent = async () => {
     <div>
       <Randomizer /> {/* Randomizer is responsible for generating counts */}
       {/* The Display component will be updated based on whatever logic you implement */}
-      <Display value={count} />{" "}
       {/* Initial placeholder, can be updated later */}
     </div>
   );

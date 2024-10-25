@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react"; // Import useRef
 import sampleData from "@/the_file_tm.json";
 import Button from "./Button";
 import { updateCard } from "@/app/Components/ServerAction"; // Import the server action
+import Converter from "./Converter";
 
 // Sample data generation logic
 const data = Object.entries(
@@ -48,7 +49,11 @@ const Randomizer = () => {
       <div>
         <h1>Countdown: {countdown} seconds</h1>
       </div>
-      <p>{count}</p>
+      <p>{count}</p>¨
+      <Converter
+        itemID={count}
+        src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
+      />
       <Button action={handleClick} text="click me" />
     </>
   );
