@@ -1,5 +1,5 @@
 import React from "react";
-import Circle from "./ReusableComponents/Circle";
+import Circle from "../ReusableComponents/Circle";
 
 const Footer = () => {
   return (

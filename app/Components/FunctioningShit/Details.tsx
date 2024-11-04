@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import "@/api_links"; // Import your API links
-import Card from "./CardComponents/Card";
+import Card from "../CardComponents/Card";
 
 interface Post {
   id: number;

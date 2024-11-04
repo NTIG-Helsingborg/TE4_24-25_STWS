@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import "@/api_links";
-import Card from "./CardComponents/Card";
+import Card from "../CardComponents/Card";
 
 interface Post {
   id: number;

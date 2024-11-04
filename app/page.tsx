@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import PlaceholderContent from "./Components/PlaceholderContent";
+import Footer from "./Components/LayoutSHit/Footer";
+import Hero from "./Components/LayoutSHit/Hero";
+import PlaceholderContent from "./Components/TestShit/PlaceholderContent";
 
 const test = () => {
   return (

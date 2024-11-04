@@ -1,5 +1,5 @@
 import React from "react";
-import FavoriteButton from "../FavoriteButton";
+import FavoriteButton from "../FunctioningShit/FavoriteButton";
 
 interface CardProps {
   name?: string;
@@ -15,7 +15,7 @@ const Card = ({ itemID, src, name, climate }: CardProps) => {
 
   return (
     <>
-      <div className="card card-side bg-base-100 shadow-xl">
+      <div className="card lg:card-side bg-base-100 shadow-xl">
         <figure>
           <img src={src} alt="Item" />
         </figure>

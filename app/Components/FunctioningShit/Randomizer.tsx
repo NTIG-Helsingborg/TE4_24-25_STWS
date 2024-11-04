@@ -1,9 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react"; // Import useRef
 import sampleData from "@/the_file_tm.json";
-import Button from "./ReusableComponents/Button";
-import { updateCard } from "@/app/Components/ServerAction"; // Import the server action
-import Converter from "./Converter";
+import Button from "../ReusableComponents/Button";
 import { useRouter } from "next/navigation";
 // Sample data generation logic
 const data = Object.entries(
@@ -25,7 +23,6 @@ const Randomizer = () => {
     const newCount = gamba();
     setCount(newCount);
     console.log(newCount);
-    await updateCard(newCount); // Call the server action and await its completion
     router.push(`/details/?query=${newCount}`);
   };
 
@@ -37,7 +34,6 @@ const Randomizer = () => {
       if (countdownRef.current > 4) {
         const newCount = gamba();
         setCount(newCount); // Update state with the new count
-        updateCard(newCount); // Call server action
         countdownRef.current = 0; // Reset countdown ref
       }
     }, 1000);

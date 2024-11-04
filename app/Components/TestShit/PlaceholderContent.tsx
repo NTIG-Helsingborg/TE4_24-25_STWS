@@ -1,7 +1,7 @@
 import React from "react";
-import Drawer from "./Drawer";
-import CardList from "./CardComponents/CardList";
-import Randomizer from "./Randomizer";
+import Drawer from "../LayoutSHit/Drawer";
+import CardList from "../CardComponents/CardList";
+import Randomizer from "../FunctioningShit/Randomizer";
 
 const PlaceholderContent = () => {
   return (
