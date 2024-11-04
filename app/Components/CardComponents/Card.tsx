@@ -15,14 +15,16 @@ const Card = ({ itemID, src, name, climate }: CardProps) => {
 
   return (
     <>
-      <div className="card bg-base-100 image-full shadow-xl">
+      <div className="card card-side bg-base-100 shadow-xl">
         <figure>
           <img src={src} alt="Item" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
           <p>{climate}</p>
-          <FavoriteButton id={itemID} />
+          <div className="card-actions justify-end">
+            <FavoriteButton id={itemID} />
+          </div>
         </div>
       </div>
     </>
