@@ -7,7 +7,7 @@ interface CardProps {
 }
 const Converter = ({ itemID, src }: CardProps) => {
   //const isFavorited = favItems.includes(itemID);
-  type catagory =
+  type Catagory =
     | "people"
     | "planets"
     | "films"
@@ -17,13 +17,11 @@ const Converter = ({ itemID, src }: CardProps) => {
   const id = itemID;
 
   // Split the string by the colon
-  const [Catagory, tag] = id.split(":") as [catagory, string];
+  const [Catagory, tag] = id.split(":") as [Catagory, string];
 
   // Convert planetId to a number
   const idTag = parseInt(tag);
-
-  console.log(Catagory); // "planet"
-  console.log(idTag); // 1
+  console.log(idTag, Catagory);
 
   return (
     <>

@@ -78,7 +78,7 @@ export default async function ApiCall({
   });
 
   if (!post) {
-    // If fetching failed or post is null, return an empty component
+    // If fetching failed or post is null, return an empty component;
     return <div>Post not found</div>;
   }
 

@@ -4,7 +4,7 @@ import sampleData from "@/the_file_tm.json";
 import Button from "./Button";
 import { updateCard } from "@/app/Components/ServerAction"; // Import the server action
 import Converter from "./Converter";
-
+import { useRouter } from "next/navigation";
 // Sample data generation logic
 const data = Object.entries(
   sampleData as unknown as { [id: string]: [string, number][] }
@@ -19,11 +19,14 @@ const Randomizer = () => {
   const countdownRef = useRef<number>(0); // Use a ref for countdown
 
   const gamba = () => data[Math.floor(Math.random() * data.length)];
+  const router = useRouter();
 
   const handleClick = async () => {
     const newCount = gamba();
     setCount(newCount);
+    console.log(newCount);
     await updateCard(newCount); // Call the server action and await its completion
+    router.push(`/details/?query=${newCount}`);
   };
 
   useEffect(() => {

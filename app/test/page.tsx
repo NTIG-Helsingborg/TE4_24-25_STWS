@@ -9,12 +9,13 @@ import Footer from "../Components/Footer";
 import ParentComponent from "../Components/ParentComponent";
 
 import PlaceholderContent from "../Components/PlaceholderContent";
+import SearchBar from "../Components/SearchBar";
 
 export default function Home() {
   return (
     <main>
       <Drawer>
-        <ParentComponent />
+        <SearchBar />
       </Drawer>
       <Footer />
     </main>

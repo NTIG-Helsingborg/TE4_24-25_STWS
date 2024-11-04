@@ -1,36 +1,20 @@
-"use client";
-import sampleData from "../../the_file_tm.json"; // Import your data
-import { useSearchParams } from "next/navigation";
-// Define the type for your data
-interface DataItem {
-  id: number;
-  name: string;
-}
-const DetailsPage = () => {
-  const router = useSearchParams();
-  const temp_query = router.get("query");
-  if (temp_query === null) return <div>ERR</div>;
-  const [id, index] = temp_query.split(":") as [
-    "people" | "planets" | "films" | "species" | "vehicles" | "starships",
-    string
-  ]; // Get the dynamic id from the URL
-  console.log(sampleData);
-  // Find the corresponding data for the given ID
-  const all = sampleData[id].find((val) => {
-    return val[1] === parseInt(index);
-  });
+import React, { Suspense } from "react";
+import Details from "../Components/Details";
+import Display from "../Components/Display";
+import Footer from "../Components/Footer";
+import PlaceholderContent from "../Components/PlaceholderContent";
+import PlaceHolder from "../Components/PlaceHolder";
 
-  if (!all) {
-    return <div>Character not found</div>;
-  }
-
+const page = () => {
   return (
     <div>
-      <h1>{all[0]}</h1>
-      <p>Catagory ID: {all[1]}</p>
-      {/* You can render more information here based on your data */}
+      <Details />
+      <Suspense fallback={<div>Loading data...</div>}>
+        <Display />
+      </Suspense>
+      <Footer />
     </div>
   );
 };
 
-export default DetailsPage;
+export default page;
