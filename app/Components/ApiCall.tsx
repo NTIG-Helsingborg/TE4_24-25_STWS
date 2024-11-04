@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import "@/api_links";
-import ClientCard from "./ClientCard";
-import Card from "./Card";
+import Card from "./CardComponents/Card";
 
 interface Post {
   id: number;
@@ -70,21 +69,27 @@ export default async function ApiCall({
   src,
 }: {
   params: { id: number; catagory: Catagory };
-
   src: string;
 }) {
-  const post = await getPost(params.catagory, params.id).catch(() => {
-    return {} as Post;
+  const { catagory, id } = params; // Destructure `catagory` and `id` here
+
+  const post = await getPost(catagory, id).catch(() => {
+    return null; // Return null if fetching fails
   });
 
   if (!post) {
-    // If fetching failed or post is null, return an empty component;
+    // If fetching failed or post is null, return an empty component
     return <div>Post not found</div>;
   }
 
   return (
     <div>
-      <Card name={post.name} src={src} itemID="a" climate={post.climate}></Card>
+      <Card
+        name={post.name}
+        src={src}
+        itemID={`${catagory}:${id}`} // Set `itemID` using template literals
+        climate={post.climate}
+      />
     </div>
   );
 }

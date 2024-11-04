@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react"; // Import useRef
 import sampleData from "@/the_file_tm.json";
-import Button from "./Button";
+import Button from "./ReusableComponents/Button";
 import { updateCard } from "@/app/Components/ServerAction"; // Import the server action
 import Converter from "./Converter";
 import { useRouter } from "next/navigation";

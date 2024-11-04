@@ -11,27 +11,15 @@ const CardList = () => {
             src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
           />
           <Card
-            itemID="planets:5"
-            src="https://static.wikia.nocookie.net/starwars/images/4/48/Dagobah_ep3.jpg"
-          />
-          <Card
             itemID="planets:2"
-            src="https://static.wikia.nocookie.net/starwars/images/4/4a/Alderaan.jpg"
-          />
-          <Card
-            itemID="planets:8"
             src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
           />
           <Card
-            itemID="people:1"
+            itemID="planets:3"
             src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
           />
           <Card
-            itemID="people:3"
-            src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
-          />
-          <Card
-            itemID="people:2"
+            itemID="planets:4"
             src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
           />
         </div>

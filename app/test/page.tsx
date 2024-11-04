@@ -1,6 +1,6 @@
 import ApiCall from "../Components/ApiCall";
 
-import CardList from "../Components/CardList";
+import CardList from "../Components/CardComponents/CardList";
 import ClientCard from "../Components/ClientCard";
 import Converter from "../Components/Converter";
 import Drawer from "../Components/Drawer";
