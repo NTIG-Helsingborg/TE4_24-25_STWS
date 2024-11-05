@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
+import { FaStar } from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
-import { FaStar } from "react-icons/fa";
 import { useFavoriteItems } from "@/app/Hooks/useFavoriteItems";
+
 interface CardProps {
   itemID: string;
 }
