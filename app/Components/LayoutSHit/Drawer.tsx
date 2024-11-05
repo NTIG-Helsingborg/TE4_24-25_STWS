@@ -47,8 +47,36 @@ const Drawer = ({ children }: DrawerProps) => {
                 Profile
               </a>
             </li>
+            <hr className=""></hr>
             <li>
-              <a className="">Staw schart</a>
+              <a href="/planets" className="">
+                Planets
+              </a>
+            </li>
+            <li>
+              <a href="/people" className="">
+                People
+              </a>
+            </li>
+            <li>
+              <a href="/vehicles" className="">
+                Vehicles
+              </a>
+            </li>
+            <li>
+              <a href="/starships" className="">
+                Starships
+              </a>
+            </li>
+            <li>
+              <a href="/films" className="">
+                Films
+              </a>
+            </li>
+            <li>
+              <a href="/species" className="">
+                Species
+              </a>
             </li>
           </ul>
         </div>

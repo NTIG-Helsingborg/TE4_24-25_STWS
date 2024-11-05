@@ -25,16 +25,6 @@ type Catagory =
   | "vehicles"
   | "starships";
 
-// Array of valid categories for runtime checking
-const validCategories: Catagory[] = [
-  "people",
-  "planets",
-  "films",
-  "species",
-  "vehicles",
-  "starships",
-];
-
 async function fetchPost(catagory: Catagory, id: number): Promise<Post | null> {
   try {
     const res = await fetch(
@@ -49,50 +39,31 @@ async function fetchPost(catagory: Catagory, id: number): Promise<Post | null> {
   }
 }
 
-export default function ApiCall({ src }: { src: string }) {
+export default function ClientFetch({
+  params,
+  src,
+}: {
+  params: { id: number; catagory: Catagory };
+  src: string;
+}) {
+  const { catagory, id } = params; // Destructure `catagory` and `id`
   const [post, setPost] = useState<Post | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [catagory, setCatagory] = useState<Catagory | null>(null);
-  const [id, setId] = useState<number | null>(null);
 
   useEffect(() => {
-    // Parse the query from the URL
-    const query = new URLSearchParams(window.location.search).get("query");
-    if (query) {
-      const parts = query.split(":");
-      if (
-        parts.length === 2 &&
-        validCategories.includes(parts[0] as Catagory)
-      ) {
-        setCatagory(parts[0] as Catagory);
-        setId(Number(parts[1]));
-      } else {
-        setError("Invalid query format");
-      }
-    } else {
-      setError("No query provided");
-    }
-  }, []);
-
-  useEffect(() => {
-    // Fetch post data if catagory and id are valid
     const getPost = async () => {
-      if (catagory && id !== null) {
-        const fetchedPost = await fetchPost(catagory, id);
-        if (fetchedPost) {
-          setPost(fetchedPost);
-        } else {
-          setError("Post not found");
-        }
+      const fetchedPost = await fetchPost(catagory, id);
+      if (fetchedPost) {
+        setPost(fetchedPost);
+      } else {
+        setError("Post not found");
       }
-      setLoading(false);
+      setLoading(false); // Update loading state
     };
 
-    if (catagory && id !== null) {
-      getPost(); // Only call getPost if both catagory and id are set
-    }
-  }, [catagory, id]);
+    getPost(); // Call the fetch function
+  }, [catagory, id]); // Dependency array to re-fetch if `catagory` or `id` change
 
   if (loading) {
     return <div>Loading...</div>; // Render loading state

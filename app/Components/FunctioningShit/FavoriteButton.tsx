@@ -1,4 +1,3 @@
-// components/FavoriteButton.tsx
 "use client";
 import React, { useState, useEffect } from "react";
 import { CiStar } from "react-icons/ci"; // Import empty star icon
@@ -8,65 +7,63 @@ interface FavoriteButtonProps {
   id: string; // Unique identifier for the item
 }
 
-// Define the FavoriteButton functional component without React.FC
 const FavoriteButton = ({ id }: FavoriteButtonProps) => {
-  const [isFavorite, setIsFavorite] = useState<boolean>(false); // State to track if the item is a favorite
+  const [isFavorite, setIsFavorite] = useState<boolean>(false);
 
   // Load favorites from local storage when the component mounts
   useEffect(() => {
     const loadFavorites = () => {
       if (typeof window !== "undefined") {
         try {
-          const storedFavorites = localStorage.getItem("favorites"); // Get the favorites from local storage
-          const favorites = storedFavorites ? JSON.parse(storedFavorites) : []; // Parse the favorites or return an empty array
-          return favorites.includes(id); // Check if the current id is a favorite
+          const storedFavorites = localStorage.getItem("favorites");
+          const favorites = storedFavorites ? JSON.parse(storedFavorites) : [];
+          return favorites.includes(id);
         } catch (error) {
-          console.error("Failed to load favorites:", error); // Log any error that occurs
-          return false; // Default to false on error
+          console.error("Failed to load favorites:", error);
+          return false;
         }
       }
-      return false; // Return false if window is undefined (for SSR)
+      return false;
     };
 
-    setIsFavorite(loadFavorites()); // Update the state with the favorite status when component mounts
-  }, [id]); // Run effect when the id changes
+    const favoriteStatus = loadFavorites();
+    setIsFavorite(favoriteStatus); // Only set state here
+  }, [id]);
 
-  // Save favorites to local storage
   const saveFavorites = (newFavorites: string[]) => {
     try {
-      localStorage.setItem("favorites", JSON.stringify(newFavorites)); // Store updated favorites in local storage
+      localStorage.setItem("favorites", JSON.stringify(newFavorites));
     } catch (error) {
-      console.error("Failed to save favorites:", error); // Log any error that occurs
+      console.error("Failed to save favorites:", error);
     }
   };
 
-  // Toggle favorite status
+  // Function to toggle the favorite state
   const toggleFavorite = () => {
-    setIsFavorite((prev) => {
-      const favorites = JSON.parse(localStorage.getItem("favorites") || "[]"); // Read current favorites from local storage
+    const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+    let updatedFavorites;
 
-      if (prev) {
-        // If the item is currently a favorite
-        const updatedFavorites = favorites.filter((fav: string) => fav !== id); // Remove the current id from favorites
-        saveFavorites(updatedFavorites); // Save the updated favorites list
-        return false; // Update state to not favorite
-      } else {
-        // If the item is not a favorite
-        if (!favorites.includes(id)) {
-          favorites.push(id); // Add the current id to favorites
-          saveFavorites(favorites); // Save the updated list
-        }
-        return true; // Update state to favorite
-      }
-    });
+    if (isFavorite) {
+      // If it's currently a favorite, remove it
+      updatedFavorites = favorites.filter((fav: string) => fav !== id);
+    } else {
+      // If it's not a favorite, add it
+      updatedFavorites = [...favorites, id];
+    }
+
+    saveFavorites(updatedFavorites);
+    setIsFavorite(!isFavorite); // Toggle state
   };
 
   return (
-    <button className="btn" onClick={toggleFavorite}>
+    <button
+      className="btn favorite-button" // Add class to identify it
+      data-id={id} // Set data attribute for identification
+      onClick={toggleFavorite}
+    >
       {isFavorite ? <FaStar /> : <CiStar />}{" "}
-      {/* Show filled star if favorite, else show empty star */}
     </button>
   );
 };
 
-export default FavoriteButton; // Export the component for use in other files
+export default FavoriteButton;
