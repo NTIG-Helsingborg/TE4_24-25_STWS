@@ -1,9 +1,7 @@
 import React from "react";
 import Title from "../LayoutSHit/Title";
 import AboutText from "./AboutText";
-import BreadText from "./BreadText";
 import Read from "../FunctioningShit/Read";
-import Images from "../LayoutSHit/Images";
 import Drawer from "../LayoutSHit/Drawer";
 
 const Content = async () => {
@@ -27,11 +25,9 @@ const Content = async () => {
             an organized and visually appealing format for users.
             "
             >
-              {" "}
-              <Read read="read" />{" "}
+              <Read read="read" />
             </AboutText>
             <a href="/navigation" className="btn btn-primary">
-              {" "}
               vist this
             </a>
 

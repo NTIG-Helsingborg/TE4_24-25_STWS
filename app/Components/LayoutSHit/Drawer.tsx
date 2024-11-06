@@ -56,9 +56,6 @@ const Drawer = ({ children }: DrawerProps) => {
               </a>
             </li>
             <li>
-              <a href="/profile">Profile</a>
-            </li>
-            <li>
               <div className="flex px-1 basis-1/3 items-center justify-center absolute inset-x-0 bottom-0 mb-5">
                 <div className="btn">
                   <Usr_btns />
