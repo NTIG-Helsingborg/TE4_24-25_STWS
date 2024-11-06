@@ -66,10 +66,10 @@ export async function generateMetadata({
 
 export default async function ApiCall({
   params,
-  src,
+  source,
 }: {
   params: { id: number; catagory: Catagory };
-  src: string;
+  source: string;
 }) {
   const { catagory, id } = params; // Destructure `catagory` and `id` here
 
@@ -86,7 +86,7 @@ export default async function ApiCall({
     <div>
       <Card
         name={post.name}
-        src={src}
+        src={source}
         itemID={`${catagory}:${id}`} // Set `itemID` using template literals
         climate={post.climate}
       />

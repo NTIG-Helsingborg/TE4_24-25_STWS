@@ -6,11 +6,8 @@ import Randomizer from "../FunctioningShit/Randomizer";
 const PlaceholderContent = () => {
   return (
     <>
-      <Drawer>
-        <Randomizer />
-        {/* Using separate IDs without an array */}
-        <CardList />
-      </Drawer>
+      {/* Using separate IDs without an array */}
+      <CardList />
     </>
   );
 };

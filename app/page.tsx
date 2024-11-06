@@ -3,6 +3,7 @@ import Footer from "./Components/LayoutSHit/Footer";
 import Hero from "./Components/LayoutSHit/Hero";
 import Drawer from "./Components/LayoutSHit/Drawer";
 import Randomizer from "./Components/FunctioningShit/Randomizer";
+import PlaceholderContent from "./Components/TestShit/PlaceholderContent";
 
 const test = () => {
   return (
@@ -10,6 +11,7 @@ const test = () => {
       <Hero />
       <Drawer>
         <>
+          <PlaceholderContent />
           <Randomizer />
         </>
       </Drawer>
