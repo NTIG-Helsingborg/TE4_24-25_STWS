@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <Drawer>
-        <Test initialIndex={0} length={10} type="people" />
+        <Test initialIndex={0} length={5} type="people" />
       </Drawer>
       <Footer />
     </main>

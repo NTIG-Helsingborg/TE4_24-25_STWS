@@ -11,39 +11,14 @@ const page = () => {
   return (
     <>
       <div className="flex md:flex-row mt-8 space-y-8 md:space-y-0 md:space-x-8 flex-col">
-        <Coob
-          img={Characters}
-          header="Characters"
-          text=""
-          cart="/navi/characters"
-        ></Coob>
-        <Coob img={Films} header="Films" text="" cart="/navi/films"></Coob>
-        <Coob
-          img={Planets}
-          header="Planets"
-          text=""
-          cart="/navi/planets"
-        ></Coob>
+        <Coob img={Characters} header="Characters" cart="/navi/people"></Coob>
+        <Coob img={Films} header="Films" cart="/navi/films"></Coob>
+        <Coob img={Planets} header="Planets" cart="/navi/planets"></Coob>
       </div>
       <div className="flex md:flex-row mt-8 space-y-8 md:space-y-0 md:space-x-8 flex-col">
-        <Coob
-          img={Species}
-          header="Species"
-          text=""
-          cart="/navi/species"
-        ></Coob>
-        <Coob
-          img={StarShips}
-          header="Starships"
-          text=""
-          cart="/navi/starships"
-        ></Coob>
-        <Coob
-          img={Vehicles}
-          header="Vehicles"
-          text=""
-          cart="/navi/vehicles"
-        ></Coob>
+        <Coob img={Species} header="Species" cart="/navi/species"></Coob>
+        <Coob img={StarShips} header="Starships" cart="/navi/starships"></Coob>
+        <Coob img={Vehicles} header="Vehicles" cart="/navi/vehicles"></Coob>
       </div>
     </>
   );

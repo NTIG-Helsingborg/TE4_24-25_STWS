@@ -74,7 +74,7 @@ export default function ClientFetch({
   }
 
   return (
-    <div>
+    <>
       {post && (
         <Card
           name={post.name}
@@ -83,6 +83,6 @@ export default function ClientFetch({
           climate={post.climate}
         />
       )}
-    </div>
+    </>
   );
 }

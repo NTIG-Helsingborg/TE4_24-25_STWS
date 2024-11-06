@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./Card";
 import Converter from "../FunctioningShit/Converter";
 
 const CardList = () => {

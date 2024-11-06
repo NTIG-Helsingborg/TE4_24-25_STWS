@@ -5,7 +5,7 @@ interface NextButtonProps {
 
 function NextButton({ onClick, disabled }: NextButtonProps) {
   return (
-    <button onClick={onClick} disabled={disabled}>
+    <button className="btn w-24" onClick={onClick} disabled={disabled}>
       Next
     </button>
   );

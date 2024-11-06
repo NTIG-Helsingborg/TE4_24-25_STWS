@@ -14,8 +14,8 @@ const Card = ({ itemID, src, name, climate }: CardProps) => {
   //const isFavorited = favItems.includes(itemID);
 
   return (
-    <>
-      <div className="card lg:card-side bg-base-100 shadow-xl">
+    <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+      <div className="card bg-base-100 w-96 shadow-xl">
         <figure>
           <img src={src} alt="Item" />
         </figure>
@@ -27,7 +27,7 @@ const Card = ({ itemID, src, name, climate }: CardProps) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
