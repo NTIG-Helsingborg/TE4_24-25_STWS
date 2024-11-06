@@ -1,13 +1,18 @@
 import React from "react";
 import Footer from "./Components/LayoutSHit/Footer";
 import Hero from "./Components/LayoutSHit/Hero";
-import PlaceholderContent from "./Components/TestShit/PlaceholderContent";
+import Drawer from "./Components/LayoutSHit/Drawer";
+import Randomizer from "./Components/FunctioningShit/Randomizer";
 
 const test = () => {
   return (
     <div>
       <Hero />
-      <PlaceholderContent />
+      <Drawer>
+        <>
+          <Randomizer />
+        </>
+      </Drawer>
       <Footer />
     </div>
   );
