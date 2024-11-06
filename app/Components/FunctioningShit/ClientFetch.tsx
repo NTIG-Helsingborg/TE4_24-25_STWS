@@ -107,6 +107,7 @@ export default function ClientFetch({
             <Card
               name={post.name}
               src={source}
+              catagory={catagory}
               itemID={`${catagory}:${id}`} // Set `itemID` using template literals
               diameter={post.diameter}
               climate={post.climate}
@@ -125,6 +126,7 @@ export default function ClientFetch({
             <Card
               name={post.name}
               src={source}
+              catagory={catagory}
               itemID={`${catagory}:${id}`} // Set `itemID` using template literals
               height={post.height}
               mass={post.mass}
@@ -146,11 +148,11 @@ export default function ClientFetch({
             <Card
               name={post.name}
               src={source}
+              catagory={catagory}
               itemID={`${catagory}:${id}`} // Set `itemID` using template literals
               designation={post.designation}
               average_height={post.average_height}
               skin_colors={post.skin_colors}
-              hair_colors={post.hair_colors}
               average_lifespan={post.average_lifespan}
               language={post.language}
             />
@@ -165,6 +167,7 @@ export default function ClientFetch({
             <Card
               name={post.name}
               src={source}
+              catagory={catagory}
               itemID={`${catagory}:${id}`} // Set `itemID` using template literals
               model={post.model}
               length={post.length}
@@ -183,6 +186,7 @@ export default function ClientFetch({
             <Card
               name={post.name}
               src={source}
+              catagory={catagory}
               itemID={`${catagory}:${id}`} // Set `itemID` using template literals
               vehicle_class={post.vehicle_class}
               crew={post.crew}
@@ -198,6 +202,7 @@ export default function ClientFetch({
             <Card
               name={post.name}
               src={source}
+              catagory={catagory}
               itemID={`${catagory}:${id}`} // Set `itemID` using template literals
               episode_id={post.episode_id}
               release_date={post.release_date}
@@ -215,6 +220,7 @@ export default function ClientFetch({
         <Card
           name={post.name}
           src={source}
+          catagory={catagory}
           itemID={`${catagory}:${id}`} // Set `itemID` using template literals
         />
       )}

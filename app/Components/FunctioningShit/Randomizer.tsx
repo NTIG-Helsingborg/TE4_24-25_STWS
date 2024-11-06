@@ -26,29 +26,8 @@ const Randomizer = () => {
     router.push(`/details/?query=${newCount}`);
   };
 
-  useEffect(() => {
-    const countdownInterval = setInterval(() => {
-      countdownRef.current += 1; // Increment ref value
-      setCountdown(countdownRef.current); // Update state to trigger re-render
-
-      if (countdownRef.current > 4) {
-        const newCount = gamba();
-        setCount(newCount); // Update state with the new count
-        countdownRef.current = 0; // Reset countdown ref
-      }
-    }, 1000);
-
-    return () => {
-      clearInterval(countdownInterval); // Cleanup on unmount
-    };
-  }, []);
-
   return (
     <>
-      <div>
-        <h1>Countdown: {countdown} seconds</h1>
-      </div>
-      <p>{count}</p>
       <Button action={handleClick} text="click me" />
     </>
   );
