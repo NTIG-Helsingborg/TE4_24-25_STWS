@@ -40,8 +40,8 @@ const Drawer = ({ children }: DrawerProps) => {
               </a>
             </li>
             <li>
-              <a href="/test" className="">
-                Test
+              <a href="/navigation" className="">
+                Navigation
               </a>
             </li>
             <li>

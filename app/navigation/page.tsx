@@ -6,10 +6,16 @@ import Planets from "../Assets/Planets.png";
 import StarShips from "../Assets/StarShips.png";
 import Species from "../Assets/Species.png";
 import Vehicles from "../Assets/Vehicles.png";
+import SearchBar from "../Components/FunctioningShit/SearchBar";
+import Drawer from "../Components/LayoutSHit/Drawer";
+import Footer from "../Components/LayoutSHit/Footer";
 
 const page = () => {
   return (
-    <>
+    <>  
+    <Drawer>
+
+    <SearchBar/>
       <div className="flex md:flex-row mt-8 space-y-8 md:space-y-0 md:space-x-8 flex-col">
         <Coob
           img={Characters}
@@ -45,6 +51,8 @@ const page = () => {
           cart="/navi/vehicles"
         ></Coob>
       </div>
+      </Drawer>
+      <Footer/>
     </>
   );
 };
