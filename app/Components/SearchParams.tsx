@@ -53,8 +53,6 @@ export default function SearchParams() {
     }
   }
 
-  console.log(idTag, category);
-
   return (
     <div>
       <Suspense>

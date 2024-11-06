@@ -1,9 +1,11 @@
-/*import { CgProfile } from "react-icons/cg";
-import Drawer from "../Components/Drawer";
+import React from "react";
+import { CgProfile } from "react-icons/cg";
 import NameDisplay from "../Components/NameDisplay";
-import Usr_btns from "../usr_buttons";
+import Profile from "../Components/FunctioningShit/Profile";
+import Drawer from "../Components/LayoutSHit/Drawer";
+import Footer from "../Components/LayoutSHit/Footer";
 
-const Profile = () => {
+const page = () => {
   return (
     <>
       <Drawer>
@@ -16,16 +18,7 @@ const Profile = () => {
             <CgProfile className="xl:size-64 lg:size-32 md:size-16 size-7" />
           </div>
         </header>
-      </Drawer>*/
-import React from "react";
-import Profile from "../Components/FunctioningShit/Profile";
-import Drawer from "../Components/LayoutSHit/Drawer";
-import Footer from "../Components/LayoutSHit/Footer";
 
-const page = () => {
-  return (
-    <>
-      <Drawer>
         <Profile />
       </Drawer>
       <Footer />
@@ -33,5 +26,4 @@ const page = () => {
   );
 };
 
-//export default Profile;
 export default page;

@@ -21,7 +21,6 @@ const Converter = ({ itemID, src }: CardProps) => {
 
   // Convert planetId to a number
   const idTag = parseInt(tag);
-  console.log(idTag, Catagory);
 
   return (
     <>

@@ -1,6 +1,6 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Usr_btns from "../usr_buttons";
+import Usr_btns from "../../usr_buttons";
 interface DrawerProps {
   children: React.ReactNode;
 }
