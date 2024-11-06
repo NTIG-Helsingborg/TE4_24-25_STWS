@@ -7,7 +7,6 @@ import Drawer from "../LayoutSHit/Drawer";
 const Content = async () => {
   return (
     <>
-      <Drawer>
         <div className="m-8">
           {/* Page title */}
           <Title title="content" />
@@ -38,7 +37,6 @@ const Content = async () => {
 
           {/* Bread text section */}
         </div>
-      </Drawer>
     </>
   );
 };

@@ -13,11 +13,11 @@ const Footer = () => {
           <Circle text=""></Circle>
         </div>
         <div className="flex space-x-7 justify-center mt-5">
-          <span className="">Home</span>
-          <span className="">Text</span>
-          <span className="">About</span>
-          <span className="">Contact us</span>
-          <span className="">Our team</span>
+         <a href="/">  <span className="">Home</span></a>
+        <a href="/navigation" ><span className="/">Navigation</span> </a>
+        <a href="/profile" ><span className="">Profile</span></a>
+        <a href="" > <span className="/pr">Contact us</span></a>
+         <a href=""> <span className="">Our team</span></a>
         </div>
       </div>
       <div className="w-screen text-center fenix-regular p-2 bg-gray-500">

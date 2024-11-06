@@ -11,11 +11,12 @@ const test = () => {
     <div>
       <Hero />
       <Drawer>
-        <>
+        
           <Randomizer />
-        </>
+          <Content />
+
+        
       </Drawer>
-      <Content />
       <Footer />
     </div>
   );
