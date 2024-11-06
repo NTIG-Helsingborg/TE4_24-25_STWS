@@ -1,24 +1,29 @@
+"use client";
 import React, { useEffect, useState } from "react";
-import Card from "./Card";
+import Card from "../Components/Card";
 
 const Profile = () => {
-  const favSelected = localStorage.getItem("selected");
-  const [selected, setSelected] = useState(``);
-
-  useEffect(() => {
-    localStorage.setItem(``);
-    const setSelected = localStorage.getItem();
-  });
+  const temp_localstore = localStorage.getItem("savedFav");
+  if (!temp_localstore) {
+    return <p>err</p>;
+  }
+  const [selected, setSelected] = useState<string[]>(
+    JSON.parse(temp_localstore)
+  );
 
   return (
     <>
       <div>
-        <div></div>
-
-        {/* div for favorite*/}
-        <div>
-          <Card itemID={selected} />
-        </div>
+        <p>hello</p>
+      </div>
+      <div>
+        {selected?.map((data, index) => {
+          return (
+            <div key={index}>
+              <Card itemID={data} src="" />
+            </div>
+          );
+        })}
       </div>
     </>
   );

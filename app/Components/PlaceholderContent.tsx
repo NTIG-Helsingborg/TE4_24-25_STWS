@@ -3,9 +3,9 @@ import Drawer from "./Drawer";
 import SearchBar from "./SearchBar";
 import Randomizer from "./Randomizer";
 import CardList from "./CardList";
-import Timer from "./Timer";
+import Button from "./Button";
 
-const PlaceholderContent = () => {
+const PlaceholderContent = ({ children }: any) => {
   return (
     <>
       <Drawer>
