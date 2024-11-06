@@ -28,9 +28,6 @@ const Card = ({ itemID, src }: CardProps) => {
   // Convert planetId to a number
   const idTag = parseInt(tag);
 
-  console.log(Catagory); // "planet"
-  console.log(idTag); // 1
-
   return (
     <>
       <ApiCall params={{ catagory: Catagory, id: idTag }} src={src}>

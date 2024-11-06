@@ -11,7 +11,6 @@ interface CardProps {
 const FavoriteButton = ({ itemID }: CardProps) => {
   function handleClick() {
     updateFavItems(itemID);
-    console.log(favItems);
   }
   const { favItems, updateFavItems } = useFavoriteItems();
   const isFavorited = favItems.includes(itemID);

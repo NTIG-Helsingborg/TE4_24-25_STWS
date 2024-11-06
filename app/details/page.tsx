@@ -14,7 +14,6 @@ const DetailsPage = () => {
     "people" | "planets" | "films" | "species" | "vehicles" | "starships",
     string
   ]; // Get the dynamic id from the URL
-  console.log(sampleData);
   // Find the corresponding data for the given ID
   const all = sampleData[id].find((val) => {
     return val[1] === parseInt(index);
