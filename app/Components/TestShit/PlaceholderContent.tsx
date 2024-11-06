@@ -3,7 +3,7 @@ import Drawer from "../LayoutSHit/Drawer";
 import CardList from "../CardComponents/CardList";
 import Randomizer from "../FunctioningShit/Randomizer";
 
-const PlaceholderContent = () => {
+const PlaceholderContent = ({ children }: any) => {
   return (
     <>
       {/* Using separate IDs without an array */}

@@ -1,6 +1,6 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import Usr_btns from "../../usr_buttons";
 interface DrawerProps {
   children: React.ReactNode;
 }
@@ -29,7 +29,7 @@ const Drawer = ({ children }: DrawerProps) => {
       {/* Sidebar (Drawer) */}
       <div className="drawer-side">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-        <div className="bg-gray-300 min-h-full w-44 p-4 text-gray-900">
+        <div className="relative bg-gray-300 min-h-full w-44 p-4 text-gray-900">
           <h1 className="protest-strike-regular block mb-2">Placeholder</h1>
           <hr className="bg-gray-900" />
           <ul className="fenix-regular">
@@ -40,8 +40,8 @@ const Drawer = ({ children }: DrawerProps) => {
               </a>
             </li>
             <li>
-              <a href="/test" className="">
-                Test
+              <a href="/navigation" className="">
+                Navigation
               </a>
             </li>
             <li>
@@ -56,6 +56,11 @@ const Drawer = ({ children }: DrawerProps) => {
               </a>
             </li>
             <li>
+              <div className="flex px-1 basis-1/3 items-center justify-center absolute inset-x-0 bottom-0 mb-5">
+                <div className="btn">
+                  <Usr_btns />
+                </div>
+              </div>
               <a href="/people" className="">
                 People
               </a>

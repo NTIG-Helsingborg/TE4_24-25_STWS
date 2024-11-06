@@ -5,17 +5,15 @@ import Drawer from "./Components/LayoutSHit/Drawer";
 import Randomizer from "./Components/FunctioningShit/Randomizer";
 import PlaceholderContent from "./Components/TestShit/PlaceholderContent";
 import Timer from "./Components/FunctioningShit/Timer";
+import Content from "./Components/TextCommponents/Content";
 
 const test = () => {
   return (
     <div>
       <Hero />
       <Drawer>
-        <>
-          <PlaceholderContent />
-          <Randomizer />
-          <Timer />
-        </>
+        <Randomizer />
+        <Content />
       </Drawer>
       <Footer />
     </div>
