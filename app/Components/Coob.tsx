@@ -1,9 +1,9 @@
 import React from 'react'
-import Image from 'next/Image'
+import Image, { StaticImageData } from 'next/image'
 import { link } from 'fs';
 interface Props {
     header:string;
-    img ?: string;
+    img ?: StaticImageData;
     text?: string;
     class?: string;
     cart:string;

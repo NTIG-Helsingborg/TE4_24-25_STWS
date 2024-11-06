@@ -26,7 +26,7 @@ const page = () => {
   <div className='flex flex-row pt-12'>
      <Coob img = {Species} header='Species' text='Sloth is lazy'cart='/navi/species'></Coob>
       <Coob img ={StarShips} header='Starships' text='Lion is cool'cart='/navi/starships'></Coob>
-      <Coob img={Vehicles} header='Vehicles' text='Bear we love bear' cart='/navi/vehicles'> </Coob> 
+      <Coob img={Vehicles} header='Vehicles' text='Bear we love bear'cart='/navi/vehicles'></Coob>
   
   </div>
 </>
