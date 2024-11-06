@@ -1,4 +1,4 @@
-import { CgProfile } from "react-icons/cg";
+/*import { CgProfile } from "react-icons/cg";
 import Drawer from "../Components/Drawer";
 import NameDisplay from "../Components/NameDisplay";
 import Usr_btns from "../usr_buttons";
@@ -16,9 +16,22 @@ const Profile = () => {
             <CgProfile className="xl:size-64 lg:size-32 md:size-16 size-7" />
           </div>
         </header>
+      </Drawer>*/
+import React from "react";
+import Profile from "../Components/FunctioningShit/Profile";
+import Drawer from "../Components/LayoutSHit/Drawer";
+import Footer from "../Components/LayoutSHit/Footer";
+
+const page = () => {
+  return (
+    <>
+      <Drawer>
+        <Profile />
       </Drawer>
+      <Footer />
     </>
   );
 };
 
-export default Profile;
+//export default Profile;
+export default page;

@@ -12,13 +12,15 @@ const Drawer = ({ children }: DrawerProps) => {
 
       {/* Main Content Area */}
       <div className="drawer-content flex flex-col">
-        <label
-          htmlFor="my-drawer-2"
-          className="fixed top-0 left-0 m-4 btn btn-outline rounded-none border-none drawer-button lg:hidden"
-        >
-          <GiHamburgerMenu />
-          Menu
-        </label>
+        <div className="lg:hidden h-16">
+          <label
+            htmlFor="my-drawer-2"
+            className="fixed top-0 left-0 m-4 btn btn-outline rounded border-none drawer-button  bg-slate-600"
+          >
+            <GiHamburgerMenu />
+            Menu
+          </label>
+        </div>
 
         {/* Dynamic Content passed as children */}
         <div className="flex-1 p-6">{children}</div>
@@ -43,7 +45,15 @@ const Drawer = ({ children }: DrawerProps) => {
               </a>
             </li>
             <li>
-              <a className="">Twacking</a>
+              <a href="/profile" className="">
+                Profile
+              </a>
+            </li>
+            <hr className=""></hr>
+            <li>
+              <a href="/planets" className="">
+                Planets
+              </a>
             </li>
             <li>
               <a href="/profile">Profile</a>
@@ -54,6 +64,29 @@ const Drawer = ({ children }: DrawerProps) => {
                   <Usr_btns />
                 </div>
               </div>
+              <a href="/people" className="">
+                People
+              </a>
+            </li>
+            <li>
+              <a href="/vehicles" className="">
+                Vehicles
+              </a>
+            </li>
+            <li>
+              <a href="/starships" className="">
+                Starships
+              </a>
+            </li>
+            <li>
+              <a href="/films" className="">
+                Films
+              </a>
+            </li>
+            <li>
+              <a href="/species" className="">
+                Species
+              </a>
             </li>
           </ul>
         </div>

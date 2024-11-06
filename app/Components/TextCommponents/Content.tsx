@@ -1,9 +1,9 @@
 import React from "react";
-import Title from "./Title";
+import Title from "../LayoutSHit/Title";
 import AboutText from "./AboutText";
 import BreadText from "./BreadText";
-import Read from "./Read";
-import Images from "./Images";
+import Read from "../FunctioningShit/Read";
+import Images from "../LayoutSHit/Images";
 
 const Content = async () => {
   return (

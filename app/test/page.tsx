@@ -1,12 +1,13 @@
-import ApiCall from "../Components/ApiCall";
-import FavoriteButton from "../Components/FavoriteButton";
-import Footer from "../Components/Footer";
-
-import PlaceholderContent from "../Components/PlaceholderContent";
+import Drawer from "../Components/LayoutSHit/Drawer";
+import Footer from "../Components/LayoutSHit/Footer";
+import Test from "./client_test";
 
 export default function Home() {
   return (
     <main>
+      <Drawer>
+        <Test index={0} length={10}/>
+      </Drawer>
       <Footer />
     </main>
   );
