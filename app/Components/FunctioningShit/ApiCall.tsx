@@ -1,7 +1,6 @@
-// Ensure no 'use client' directive here - this is a Server Component
-
 import { notFound } from "next/navigation";
 import "@/api_links";
+import Card from "../CardComponents/Card";
 
 interface Post {
   id: number;
@@ -67,15 +66,15 @@ export async function generateMetadata({
 
 export default async function ApiCall({
   params,
-  children,
   src,
 }: {
   params: { id: number; catagory: Catagory };
-  children: React.ReactNode;
   src: string;
 }) {
-  const post = await getPost(params.catagory, params.id).catch(() => {
-    return {} as Post;
+  const { catagory, id } = params; // Destructure `catagory` and `id` here
+
+  const post = await getPost(catagory, id).catch(() => {
+    return null; // Return null if fetching fails
   });
 
   if (!post) {
@@ -84,15 +83,13 @@ export default async function ApiCall({
   }
 
   return (
-    <div className="card bg-base-100 image-full shadow-xl">
-      <figure>
-        <img src={src} alt="Item" />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">{post.name}</h2>
-        <p>{post.climate}</p>
-        <div className="card-actions justify-end">{children}</div>
-      </div>
+    <div>
+      <Card
+        name={post.name}
+        src={src}
+        itemID={`${catagory}:${id}`} // Set `itemID` using template literals
+        climate={post.climate}
+      />
     </div>
   );
 }
