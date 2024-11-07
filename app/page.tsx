@@ -12,8 +12,14 @@ const test = () => {
     <div>
       <Hero />
       <Drawer>
-        <Randomizer />
+        <Timer />
         <Content />
+        <div className="flex space-x-16">
+          <a href="/navigation" className="btn btn-wide ms-8  btn-primary">
+            Library of Knowlage
+          </a>
+          <Randomizer />
+        </div>
       </Drawer>
       <Footer />
     </div>

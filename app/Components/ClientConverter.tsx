@@ -68,9 +68,12 @@ const Converter = ({ itemID }: CardProps) => {
     | "starships";
 
   const ido = itemID;
+  console.log(ido);
 
   // Split the string by the colon
+  console.log(ido);
   const [category, tag] = ido.split(":") as [Category, string];
+  console.log(ido);
 
   // Convert the tag (which is a string) to a number
   const idTag = parseInt(tag);

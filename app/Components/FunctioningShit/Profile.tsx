@@ -73,10 +73,7 @@ const Profile = () => {
             <div key={itemId} data-id={itemId} className="mb-4">
               {" "}
               {/* Ensure unique key */}
-              <ClientConverter
-                itemId={itemId}
-                src="https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"
-              />
+              <ClientConverter itemID={itemId} />
             </div>
           ))}
         </div>

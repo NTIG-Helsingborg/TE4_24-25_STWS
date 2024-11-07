@@ -26,7 +26,7 @@ const Coob = ({ header, img, text, cart }: Props) => {
           <p>{text}</p>
           <div className="card-actions">
             <a href={cart} className="btn btn-primary">
-              closer look
+              Closer look
             </a>
           </div>
         </div>

@@ -27,7 +27,7 @@ const Randomizer = () => {
 
   return (
     <>
-      <Button action={handleClick} text="click me" />
+      <Button action={handleClick} text="Try me" />
     </>
   );
 };

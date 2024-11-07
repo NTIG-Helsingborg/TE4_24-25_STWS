@@ -1,11 +1,16 @@
 import React from "react";
-import Test from "./client_test";
+import Test from "../../Components/TestShit/client_test";
+import Drawer from "@/app/Components/LayoutSHit/Drawer";
+import Footer from "@/app/Components/LayoutSHit/Footer";
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   return (
-    <div>
-      <Test initialIndex={0} length={10} type={(await params).slug} />
-    </div>
+    <>
+      <Drawer>
+        <Test initialIndex={0} length={10} type={(await params).slug} />
+      </Drawer>
+      <Footer />
+    </>
   );
 };
 

@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 body {
+  background-color: #20242c;
 }
 .fenix-regular {
   font-family: "Fenix", serif;
