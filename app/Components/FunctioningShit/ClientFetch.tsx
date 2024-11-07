@@ -215,7 +215,7 @@ export default function ClientFetch({
   }
 
   return (
-    <div>
+    <>
       {post && (
         <Card
           name={post.name}
@@ -224,6 +224,6 @@ export default function ClientFetch({
           itemID={`${catagory}:${id}`} // Set `itemID` using template literals
         />
       )}
-    </div>
+    </>
   );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import FavoriteButton from "../FunctioningShit/FavoriteButton";
-import ClientFetch from "../FunctioningShit/ClientFetch";
 
 interface CardProps {
   itemID: string;
@@ -88,35 +87,21 @@ const Card = ({
   switch (catagory) {
     case "planets":
       return (
-        <div className="card lg:card-side shadow-xl bg-white">
+        <div className="card lg:card-side shadow-xl bg-zinc-600 mt-4">
           <figure>
-            <img src={src} alt="Item" />
+            <img className="ms-4 rounded-full" src={src} alt="Item" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{name}</h2>
-            <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center items-center lg:items-start">
+            <div className="flex flex-col lg:flex-row lg:space-x-4  items-center lg:items-start">
               <ul className="w-full lg:w-1/3">
-                <li>"diameter": {diameter}</li>
-                <li>"climate": {climate}</li>
-                <li>"gravity": {gravity}</li>
-                <li>"terrain": {terrain}</li>
-                <li>"population": {population}</li>
+                <li>Diameter: {diameter}</li>
+                <li>Climate: {climate}</li>
+                <li>Gravity: {gravity}</li>
+                <li>Terrain: {terrain}</li>
+                <li>Population: {population}</li>
               </ul>
-              <ul className="w-full lg:w-1/3">
-                <li>
-                  <h2>Residents</h2>
-                </li>
-                <li>https://swapi.dev/api/people/1/</li>
-                <li>https://swapi.dev/api/people/2/</li>
-                <li>https://swapi.dev/api/people/4/</li>
-                <li>https://swapi.dev/api/people/6/</li>
-                <li>https://swapi.dev/api/people/7/</li>
-                <li>https://swapi.dev/api/people/8/</li>
-                <li>https://swapi.dev/api/people/9/</li>
-                <li>https://swapi.dev/api/people/11/</li>
-                <li>https://swapi.dev/api/people/43/</li>
-                <li>https://swapi.dev/api/people/62/</li>
-              </ul>
+              <ul className="w-full lg:w-1/3"></ul>
             </div>
 
             <div className="card-actions justify-end">
@@ -128,25 +113,21 @@ const Card = ({
       break;
     case "people":
       return (
-        <div className="card lg:card-side shadow-xl bg-white">
+        <div className="card lg:card-side shadow-xl bg-zinc-600 mt-4">
           <figure>
-            <img src={src} alt="Item" />
+            <img className="ms-4 rounded-md-full" src={src} alt="Item" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{name}</h2>
-            <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center items-center lg:items-start">
+            <div className="flex flex-col lg:flex-row lg:space-x-4  items-center lg:items-start">
               <ul className="w-full lg:w-1/3">
-                <li>"height": {height}</li>
-                <li>"mass": {mass}</li>
-                <li>"hair color": {hair_color}</li>
-                <li>"eye color": {eye_color}</li>
-                <li>"birth year": {birth_year}</li>
+                <li>Height: {height}</li>
+                <li>Mass: {mass}</li>
+                <li>Hair color: {hair_color}</li>
+                <li>Eye color: {eye_color}</li>
+                <li>Birth year: {birth_year}</li>
               </ul>
-              <ul className="w-full lg:w-1/3">
-                <li>
-                  <h2>Residents</h2>
-                </li>
-              </ul>
+              <ul className="w-full lg:w-1/3"></ul>
             </div>
 
             <div className="card-actions justify-end">
@@ -158,25 +139,21 @@ const Card = ({
       break;
     case "species":
       return (
-        <div className="card lg:card-side shadow-xl bg-white">
+        <div className="card lg:card-side shadow-xl bg-zinc-600 mt-4">
           <figure>
-            <img src={src} alt="Item" />
+            <img className="ms-4 rounded-md" src={src} alt="Item" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{name}</h2>
-            <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center items-center lg:items-start">
+            <div className="flex flex-col lg:flex-row lg:space-x-4  items-center lg:items-start">
               <ul className="w-full lg:w-1/3">
-                <li>"designation": {designation}</li>
-                <li>"average height": {average_height}</li>
-                <li>"skin colors": {skin_colors}</li>
-                <li>"average lifespan": {average_lifespan}</li>
-                <li>"language": {language}</li>
+                <li>Designation: {designation}</li>
+                <li>Average height: {average_height}</li>
+                <li>Skin colors: {skin_colors}</li>
+                <li>Average lifespan: {average_lifespan}</li>
+                <li>Language: {language}</li>
               </ul>
-              <ul className="w-full lg:w-1/3">
-                <li>
-                  <h2>Residents</h2>
-                </li>
-              </ul>
+              <ul className="w-full lg:w-1/3"></ul>
             </div>
 
             <div className="card-actions justify-end">
@@ -188,25 +165,21 @@ const Card = ({
       break;
     case "starships":
       return (
-        <div className="card lg:card-side shadow-xl bg-white">
+        <div className="card lg:card-side shadow-xl bg-zinc-600 mt-4">
           <figure>
-            <img src={src} alt="Item" />
+            <img className="ms-4 rounded-md" src={src} alt="Item" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{name}</h2>
-            <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center items-center lg:items-start">
+            <div className="flex flex-col lg:flex-row lg:space-x-4  items-center lg:items-start">
               <ul className="w-full lg:w-1/3">
-                <li>"model": {model}</li>
-                <li>"length": {length}</li>
-                <li>"crew": {crew}</li>
-                <li>"pilots": {pilots}</li>
-                <li>"classification": {classification}</li>
+                <li>Model: {model}</li>
+                <li>Length: {length}</li>
+                <li>Crew: {crew}</li>
+                <li>Pilots: {pilots}</li>
+                <li>Classification: {classification}</li>
               </ul>
-              <ul className="w-full lg:w-1/3">
-                <li>
-                  <h2>Residents</h2>
-                </li>
-              </ul>
+              <ul className="w-full lg:w-1/3"></ul>
             </div>
 
             <div className="card-actions justify-end">
@@ -218,22 +191,18 @@ const Card = ({
       break;
     case "vehicles":
       return (
-        <div className="card lg:card-side shadow-xl bg-white">
+        <div className="card lg:card-side shadow-xl bg-zinc-600 mt-4">
           <figure>
-            <img src={src} alt="Item" />
+            <img className="ms-4 rounded-md" src={src} alt="Item" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{name}</h2>
-            <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center items-center lg:items-start">
+            <div className="flex flex-col lg:flex-row lg:space-x-4  items-center lg:items-start">
               <ul className="w-full lg:w-1/3">
-                <li>"vehicle_class": {vehicle_class}</li>
-                <li>"crew": {crew}</li>
+                <li>Vehicle_class: {vehicle_class}</li>
+                <li>Crew: {crew}</li>
               </ul>
-              <ul className="w-full lg:w-1/3">
-                <li>
-                  <h2>Residents</h2>
-                </li>
-              </ul>
+              <ul className="w-full lg:w-1/3"></ul>
             </div>
 
             <div className="card-actions justify-end">
@@ -245,35 +214,18 @@ const Card = ({
       break;
     case "films":
       return (
-        <div className="card lg:card-side shadow-xl bg-white">
+        <div className="card lg:card-side shadow-xl bg-zinc-600 mt-4">
           <figure>
-            <img src={src} alt="Item" />
+            <img className="ms-4 rounded-md" src={src} alt="Item" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{name}</h2>
-            <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center items-center lg:items-start">
+            <h2 className="card-title">{title}</h2>
+            <div className="flex flex-col lg:flex-row lg:space-x-4  items-center lg:items-start">
               <ul className="w-full lg:w-1/3">
-                <li>"diameter": {diameter}</li>
-                <li>"climate": {climate}</li>
-                <li>"gravity": {gravity}</li>
-                <li>"terrain": {terrain}</li>
-                <li>"population": {population}</li>
+                <li>Episode: {episode_id}</li>
+                <li>Release date: {release_date}</li>
               </ul>
-              <ul className="w-full lg:w-1/3">
-                <li>
-                  <h2>Residents</h2>
-                </li>
-                <li>https://swapi.dev/api/people/1/</li>
-                <li>https://swapi.dev/api/people/2/</li>
-                <li>https://swapi.dev/api/people/4/</li>
-                <li>https://swapi.dev/api/people/6/</li>
-                <li>https://swapi.dev/api/people/7/</li>
-                <li>https://swapi.dev/api/people/8/</li>
-                <li>https://swapi.dev/api/people/9/</li>
-                <li>https://swapi.dev/api/people/11/</li>
-                <li>https://swapi.dev/api/people/43/</li>
-                <li>https://swapi.dev/api/people/62/</li>
-              </ul>
+              <ul className="w-full lg:w-1/3"></ul>
             </div>
 
             <div className="card-actions justify-end">
@@ -284,61 +236,5 @@ const Card = ({
       );
       break;
   }
-
-  return (
-    <>
-      <div className="card lg:card-side shadow-xl bg-white">
-        <figure>
-          <img src={src} alt="Item" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">{name}</h2>
-          <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center items-center lg:items-start">
-            {/* Center on small screens, left-align on large */}
-
-            <ul className="w-full lg:w-1/3">
-              <li>"diameter": "10465"</li>
-              <li>"climate": "arid"</li>
-              <li>"gravity": "1 standard"</li>
-              <li>"terrain": "desert"</li>
-              <li>"population": "200000"</li>
-            </ul>
-            <ul className="w-full lg:w-1/3">
-              <li>
-                <h2>Residents</h2>
-              </li>
-              <li>https://swapi.dev/api/people/1/</li>
-              <li>https://swapi.dev/api/people/2/</li>
-              <li>https://swapi.dev/api/people/4/</li>
-              <li>https://swapi.dev/api/people/6/</li>
-              <li>https://swapi.dev/api/people/7/</li>
-              <li>https://swapi.dev/api/people/8/</li>
-              <li>https://swapi.dev/api/people/9/</li>
-              <li>https://swapi.dev/api/people/11/</li>
-              <li>https://swapi.dev/api/people/43/</li>
-              <li>https://swapi.dev/api/people/62/</li>
-            </ul>
-          </div>
-
-          <div className="card-actions justify-end">
-            <FavoriteButton id={itemID} />
-          </div>
-        </div>
-      </div>
-
-      <div className="card bg-white shadow-xl mt-8 w-96">
-        <figure>
-          <img src={src} alt={itemID} />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">{name}</h2>
-
-          <div className="card-actions justify-end ">
-            <FavoriteButton id={itemID} />
-          </div>
-        </div>
-      </div>
-    </>
-  );
 };
 export default Card;

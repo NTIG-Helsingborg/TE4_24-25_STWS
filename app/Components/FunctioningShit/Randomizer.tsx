@@ -22,13 +22,12 @@ const Randomizer = () => {
   const handleClick = async () => {
     const newCount = gamba();
     setCount(newCount);
-    console.log(newCount);
     router.push(`/details/?query=${newCount}`);
   };
 
   return (
     <>
-      <Button action={handleClick} text="click me" />
+      <Button action={handleClick} text="Try me" />
     </>
   );
 };

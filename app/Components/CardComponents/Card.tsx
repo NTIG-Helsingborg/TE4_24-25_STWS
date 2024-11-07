@@ -13,8 +13,8 @@ const Card = ({ itemID, src, name, climate }: CardProps) => {
 
   return (
     <>
-      <a href="http://localhost:3000/details?query=planets:1">
-        <div className="card lg:card-side shadow-xl bg-white">
+      <a href={`/details?query=${itemID}`}>
+        <div className="card lg:card-side shadow-xl bg-zinc-600">
           <figure>
             <img src={src} alt="Item" />
           </figure>

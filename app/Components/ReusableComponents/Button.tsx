@@ -13,7 +13,10 @@ const Button = ({ action, text }: BtnProps) => {
   return (
     <div>
       {/* Button to open the drawer */}
-      <button className="btn" onClick={action}>
+      <button
+        className="btn btn-wide bg-error text-black font-bold ms-8"
+        onClick={action}
+      >
         {text}
       </button>
     </div>
