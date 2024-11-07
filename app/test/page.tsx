@@ -1,6 +1,6 @@
 import Drawer from "../Components/LayoutSHit/Drawer";
 import Footer from "../Components/LayoutSHit/Footer";
-import Test from "../navi/[slug]/client_test";
+import Test from "../Components/TestShit/client_test";
 export default function Home() {
   return (
     <main>

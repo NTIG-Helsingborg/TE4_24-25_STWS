@@ -1,30 +1,29 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Timer() {
-  const [countdown, setCountdown] = useState(0); // Countdown starts at 0 seconds
+  const [countdown, setCountdown] = useState<number>(1000); // Start at 100
+  const countdownRef = useRef<number>(1000); // Initialize ref at 100
 
   useEffect(() => {
-    // Countdown logic
     const countdownInterval = setInterval(() => {
-      setCountdown((prevCountdown) => {
-        if (prevCountdown < 3) {
-          return prevCountdown + 1;
-        } else {
-          return 0; // Reset the countdown when it reaches 10
-        }
-      });
-    }, 1000); // Increment every second (1000ms)
+      if (countdownRef.current > 0) {
+        countdownRef.current -= 1; // Decrement ref value
+        setCountdown(countdownRef.current); // Update state to trigger re-render
+      } else {
+        clearInterval(countdownInterval); // Stop interval when it reaches zero
+      }
+    }, 1000);
 
     return () => {
-      clearInterval(countdownInterval); // Clear the countdown interval when the component unmounts
+      clearInterval(countdownInterval); // Cleanup on unmount
     };
-  }, []); // Empty dependency array means this runs once when the component mounts
+  }, []);
 
   return (
-    <div>
-      {/* Displaying the countdown */}
-      <h1>Countdown: {countdown} seconds</h1>
+    <div className="ms-8">
+      <h1>OMINOUS COUNTDOWN: {countdown} seconds </h1>
+      <span>do not ignore</span>
     </div>
   );
 }

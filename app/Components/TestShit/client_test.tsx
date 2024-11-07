@@ -4,7 +4,6 @@ import { useState } from "react";
 import _sampleData from "@/the_file_tm.json";
 import NextButton from "@/app/Components/FunctioningShit/NextButton";
 import PreviousButton from "@/app/Components/FunctioningShit/PreviousButton";
-import Converter from "@/app/Components/FunctioningShit/Converter";
 import ClientConverter from "@/app/Components/ClientConverter";
 
 const sampleData = _sampleData as { [index: string]: (string | number)[][] };
@@ -47,11 +46,11 @@ export default function Test({
 
   return (
     <>
-      <p style={{ whiteSpace: "pre" }}>
+      {/*<p style={{ whiteSpace: "pre" }}>
         {`pages: ${maxIndex + 1}\nlast page number elem: ${
           sampleData[type].length % length
         }`}
-      </p>
+      </p>*/}
 
       {sampleData[type]
         .slice(index * length, index * length + length)
@@ -60,14 +59,10 @@ export default function Test({
         })
         .flat(1)
         .map((val, i) => (
-          <ClientConverter
-            key={i}
-            itemId={val}
-            src="https://cdn.hswstatic.com/gif/frog-1.jpg"
-          />
+          <ClientConverter key={i} itemID={val} />
         ))}
 
-      <div className="flex flex-row justify-center space-x-10">
+      <div className="flex flex-row justify-center space-x-10 mt-4">
         <PreviousButton onClick={handlePrevious} disabled={index <= 0} />
         <NextButton onClick={handleNext} disabled={index >= maxIndex} />
       </div>

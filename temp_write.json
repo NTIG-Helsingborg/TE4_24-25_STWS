@@ -3,27 +3,27 @@
     [
       "Luke Skywalker",
       1,
-      "https://static.wikia.nocookie.net/starwars/images/3/3d/LukeSkywalker.png/revision/latest/scale-to-width-down/499?cb=20231102230825"
+      "https://static.wikia.nocookie.net/themandalorian/images/a/a6/Luke_Skywalker_Render.png/revision/latest?cb=20240403165346"
     ],
     [
       "C-3PO",
       2,
-      "https://static.wikia.nocookie.net/starwars/images/a/a2/C-3PO-TROSTGG.png/revision/latest/scale-to-width-down/500?cb=20230706042830"
+      "https://static.wikia.nocookie.net/starwars/images/a/a2/C-3PO-TROSTGG.png"
     ],
     [
       "R2-D2",
       3,
-      "https://static.wikia.nocookie.net/starwars/images/9/95/R2-D2-TROSOCE.png/revision/latest/scale-to-width-down/500?cb=20240104043013"
+      "https://static.wikia.nocookie.net/starwars/images/9/95/R2-D2-TROSOCE.png"
     ],
     [
       "Darth Vader",
       4,
-      "https://static.wikia.nocookie.net/starwars/images/6/6f/Anakin_Skywalker_RotS.png/revision/latest/scale-to-width-down/500?cb=20130621175844"
+      "https://static.wikia.nocookie.net/starwars/images/c/cc/DarthVader-NEGTC.png/revision/latest?cb=20221019152306"
     ],
     [
       "Leia Organa",
       5,
-      "https://static.wikia.nocookie.net/starwars/images/f/f1/Leia_Organa_TROS.png/revision/latest/scale-to-width-down/500?cb=20200102034101"
+      "https://static.wikia.nocookie.net/starwars/images/f/f1/Leia_Organa_TROS.png/revision/latest?cb=20200102034101"
     ],
     [
       "Owen Lars",
@@ -412,191 +412,895 @@
     ]
   ],
   "planets": [
-    ["Tatooine", 1],
-    ["Alderaan", 2],
-    ["Yavin IV", 3],
-    ["Hoth", 4],
-    ["Dagobah", 5],
-    ["Bespin", 6],
-    ["Endor", 7],
-    ["Naboo", 8],
-    ["Coruscant", 9],
-    ["Kamino", 10],
-    ["Geonosis", 11],
-    ["Utapau", 12],
-    ["Mustafar", 13],
-    ["Kashyyyk", 14],
-    ["Polis Massa", 15],
-    ["Mygeeto", 16],
-    ["Felucia", 17],
-    ["Cato Neimoidia", 18],
-    ["Saleucami", 19],
+    [
+      "Tatooine",
+      1,
+      "https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png/revision/latest/scale-to-width-down/350?cb=20131019121937"
+    ],
+    [
+      "Alderaan",
+      2,
+      "https://static.wikia.nocookie.net/starwars/images/4/4a/Alderaan.jpg/revision/latest/scale-to-width-down/500?cb=20061211013805"
+    ],
+    [
+      "Yavin IV",
+      3,
+      "https://static.wikia.nocookie.net/starwars/images/d/d4/Yavin-4-SWCT.png/revision/latest/scale-to-width-down/500?cb=20181015023938"
+    ],
+    [
+      "Hoth",
+      4,
+      "https://static.wikia.nocookie.net/starwars/images/1/1d/Hoth_SWCT.png/revision/latest/scale-to-width-down/500?cb=20160630022322"
+    ],
+    [
+      "Dagobah",
+      5,
+      "https://static.wikia.nocookie.net/starwars/images/4/48/Dagobah_ep3.jpg/revision/latest/scale-to-width-down/500?cb=20100122163146"
+    ],
+    [
+      "Bespin",
+      6,
+      "https://static.wikia.nocookie.net/starwars/images/1/11/Bespin-SWCT.png/revision/latest/scale-to-width-down/500?cb=20181010054421"
+    ],
+    [
+      "Endor",
+      7,
+      "https://static.wikia.nocookie.net/starwars/images/1/1d/Endor_BF2.png/revision/latest/scale-to-width-down/500?cb=20171014232605"
+    ],
+    [
+      "Naboo",
+      8,
+      "https://static.wikia.nocookie.net/starwars/images/f/f0/Naboo_planet.png/revision/latest/scale-to-width-down/500?cb=20240216051108"
+    ],
+    [
+      "Coruscant",
+      9,
+      "https://static.wikia.nocookie.net/starwars/images/a/a6/Coruscant-SWJS.jpg/revision/latest/scale-to-width-down/500?cb=20240324185443"
+    ],
+    [
+      "Kamino",
+      10,
+      "https://static.wikia.nocookie.net/starwars/images/5/52/Kamino-DB.png/revision/latest/scale-to-width-down/350?cb=20150920190527"
+    ],
+    [
+      "Geonosis",
+      11,
+      "https://static.wikia.nocookie.net/starwars/images/6/6d/Geonosis_AotC.png/revision/latest/scale-to-width-down/499?cb=20121231120327"
+    ],
+    [
+      "Utapau",
+      12,
+      "https://static.wikia.nocookie.net/starwars/images/c/ce/UtapauRotS.png/revision/latest/scale-to-width-down/350?cb=20160118063015"
+    ],
+    [
+      "Mustafar",
+      13,
+      "https://static.wikia.nocookie.net/starwars/images/6/61/Mustafar-TROSGG.png/revision/latest/scale-to-width-down/500?cb=20200722072411"
+    ],
+    [
+      "Kashyyyk",
+      14,
+      "https://static.wikia.nocookie.net/starwars/images/e/ea/Kashyyyk-SW-MTHC.png/revision/latest/scale-to-width-down/350?cb=20230810014826"
+    ],
+    [
+      "Polis Massa",
+      15,
+      "https://static.wikia.nocookie.net/starwars/images/6/60/PolisMassa.png/revision/latest/scale-to-width-down/500?cb=20130205053216"
+    ],
+    [
+      "Mygeeto",
+      16,
+      "https://static.wikia.nocookie.net/starwars/images/e/e5/Mygeeto_GE2.jpg/revision/latest/scale-to-width-down/500?cb=20190525003238"
+    ],
+    [
+      "Felucia",
+      17,
+      "https://static.wikia.nocookie.net/starwars/images/a/a2/Felucia_SWCT.png/revision/latest/scale-to-width-down/500?cb=20181010054430"
+    ],
+    [
+      "Cato Neimoidia",
+      18,
+      "https://static.wikia.nocookie.net/starwars/images/f/fe/CatoNeimoidia-BTCG.png/revision/latest?cb=20211111010658"
+    ],
+    [
+      "Saleucami",
+      19,
+      "https://static.wikia.nocookie.net/starwars/images/8/89/Saleucami-TD.png/revision/latest/scale-to-width-down/500?cb=20120903165734"
+    ],
     ["Stewjon", 20],
-    ["Eriadu", 21],
-    ["Corellia", 22],
-    ["Rodia", 23],
-    ["Nal Hutta", 24],
-    ["Dantooine", 25],
-    ["Bestine IV", 26],
-    ["Ord Mantell", 27],
-    ["unknown", 28],
-    ["Trandosha", 29],
-    ["Socorro", 30],
-    ["Mon Cala", 31],
-    ["Chandrila", 32],
-    ["Sullust", 33],
-    ["Toydaria", 34],
-    ["Malastare", 35],
-    ["Dathomir", 36],
-    ["Ryloth", 37],
-    ["Aleen Minor", 38],
-    ["Vulpter", 39],
-    ["Troiken", 40],
-    ["Tund", 41],
-    ["Haruun Kal", 42],
-    ["Cerea", 43],
-    ["Glee Anselm", 44],
-    ["Iridonia", 45],
+    [
+      "Eriadu",
+      21,
+      "https://static.wikia.nocookie.net/starwars/images/d/dc/Eriadu_TEA.jpg/revision/latest/scale-to-width-down/500?cb=20200822092400"
+    ],
+    [
+      "Corellia",
+      22,
+      "https://static.wikia.nocookie.net/starwars/images/d/d7/Corellia-SWCT.png/revision/latest/scale-to-width-down/500?cb=20231206040152"
+    ],
+    [
+      "Rodia",
+      23,
+      "https://static.wikia.nocookie.net/starwars/images/c/c3/Rodia_canon.png/revision/latest/scale-to-width-down/500?cb=20150817013106"
+    ],
+    [
+      "Nal Hutta",
+      24,
+      "https://static.wikia.nocookie.net/starwars/images/0/0d/NalHutta-HFZ.png/revision/latest/scale-to-width-down/499?cb=20130517035000"
+    ],
+    [
+      "Dantooine",
+      25,
+      "https://static.wikia.nocookie.net/starwars/images/a/a5/Dantooine_Resistance.jpg/revision/latest/scale-to-width-down/500?cb=20200120190043"
+    ],
+    [
+      "Bestine IV",
+      26,
+      "https://static.wikia.nocookie.net/starwars/images/f/f8/Bestine-BH28.jpg/revision/latest/scale-to-width-down/350?cb=20221221163346"
+    ],
+    [
+      "Ord Mantell",
+      27,
+      "https://static.wikia.nocookie.net/starwars/images/3/36/Ord_Mantell_EotECR.png/revision/latest/scale-to-width-down/500?cb=20170222012958"
+    ],
+    [
+      "unknown",
+      28,
+      "https://static.wikia.nocookie.net/starwars/images/1/19/UnknownRegions-TEA.png/revision/latest/scale-to-width-down/500?cb=20211022083423"
+    ],
+    [
+      "Trandosha",
+      29,
+      "https://static.wikia.nocookie.net/starwars/images/4/40/Trandosha-PL.png/revision/latest/scale-to-width-down/500?cb=20130530013144"
+    ],
+    [
+      "Socorro",
+      30,
+      "https://static.wikia.nocookie.net/starwars/images/7/79/Socorro.png/revision/latest/scale-to-width-down/350?cb=20181224101618"
+    ],
+    [
+      "Mon Cala",
+      31,
+      "https://static.wikia.nocookie.net/starwars/images/0/04/Dac-AORCR.png/revision/latest/scale-to-width-down/500?cb=20170222012252"
+    ],
+    [
+      "Chandrila",
+      32,
+      "https://static.wikia.nocookie.net/starwars/images/0/0c/Chandrila-AoRCR.png/revision/latest/scale-to-width-down/500?cb=20170222012047"
+    ],
+    [
+      "Sullust",
+      33,
+      "https://static.wikia.nocookie.net/starwars/images/2/22/Sullust-SWBC62.png/revision/latest/scale-to-width-down/500?cb=20240218054831"
+    ],
+    [
+      "Toydaria",
+      34,
+      "https://static.wikia.nocookie.net/starwars/images/d/d6/Toydaria-TCW.png/revision/latest/scale-to-width-down/350?cb=20130506235119"
+    ],
+    [
+      "Malastare",
+      35,
+      "https://static.wikia.nocookie.net/starwars/images/0/00/Malastare_TEA.jpg/revision/latest/scale-to-width-down/500?cb=20200830111705"
+    ],
+    [
+      "Dathomir",
+      36,
+      "https://static.wikia.nocookie.net/starwars/images/3/34/DathomirJFO.jpg/revision/latest/scale-to-width-down/500?cb=20200222032237"
+    ],
+    [
+      "Ryloth",
+      37,
+      "https://static.wikia.nocookie.net/starwars/images/9/96/Ryloth-Homecoming.png/revision/latest/scale-to-width-down/500?cb=20200517155255"
+    ],
+    [
+      "Aleen Minor",
+      38,
+      "https://static.wikia.nocookie.net/starwars/images/f/f6/Aleen_NEGAS.jpg/revision/latest?cb=20070630172856"
+    ],
+    [
+      "Vulpter",
+      39,
+      "https://static.wikia.nocookie.net/starwars/images/b/b6/Cerberon-SWT.jpg/revision/latest/scale-to-width-down/350?cb=20220603135044"
+    ],
+    [
+      "Troiken",
+      40,
+      "https://static.wikia.nocookie.net/starwars/images/c/ce/Troiken.jpg/revision/latest/scale-to-width-down/500?cb=20190503110140"
+    ],
+    [
+      "Tund",
+      41,
+      "https://static.wikia.nocookie.net/starwars/images/9/9d/MalagarrCentrality.png/revision/latest/scale-to-width-down/499?cb=20210212221408"
+    ],
+    [
+      "Haruun Kal",
+      42,
+      "https://static.wikia.nocookie.net/starwars/images/3/3d/Haruun-Kal-SWT.jpg/revision/latest/scale-to-width-down/500?cb=20240707150837"
+    ],
+    [
+      "Cerea",
+      43,
+      "https://static.wikia.nocookie.net/starwars/images/8/80/Cerea_-_sw_galactic_atlas.png/revision/latest?cb=20160930171015"
+    ],
+    [
+      "Glee Anselm",
+      44,
+      "https://static.wikia.nocookie.net/starwars/images/0/0c/GleeAnselm.jpg/revision/latest/scale-to-width-down/500?cb=20201018023343"
+    ],
+    [
+      "Iridonia",
+      45,
+      "https://static.wikia.nocookie.net/starwars/images/4/45/Iridonia-TFABG.jpg/revision/latest/scale-to-width-down/500?cb=20241011202844"
+    ],
     ["Tholoth", 46],
-    ["Iktotch", 47],
-    ["Quermia", 48],
-    ["Dorin", 49],
-    ["Champala", 50],
-    ["Mirial", 51],
-    ["Serenno", 52],
-    ["Concord Dawn", 53],
-    ["Zolan", 54],
-    ["Ojom", 55],
-    ["Skako", 56],
-    ["Muunilinst", 57],
-    ["Shili", 58],
-    ["Kalee", 59],
-    ["Umbara", 60]
+    [
+      "Iktotch",
+      47,
+      "https://static.wikia.nocookie.net/starwars/images/f/f3/Aridus_TFA_BG.jpg/revision/latest?cb=20180510173215"
+    ],
+    [
+      "Quermia",
+      48,
+      "https://static.wikia.nocookie.net/starwars/images/3/39/Quermia_Atlas.png/revision/latest/scale-to-width-down/350?cb=20161003175917"
+    ],
+    [
+      "Dorin",
+      49,
+      "https://static.wikia.nocookie.net/starwars/images/b/ba/Vicondor.jpg/revision/latest/scale-to-width-down/350?cb=20190514084435"
+    ],
+    [
+      "Champala",
+      50,
+      "https://static.wikia.nocookie.net/starwars/images/4/45/Champala-SWT.jpg/revision/latest/scale-to-width-down/500?cb=20240705082724"
+    ],
+    [
+      "Mirial",
+      51,
+      "https://static.wikia.nocookie.net/starwars/images/2/20/Mirial-Pippip-SWT.jpg/revision/latest/scale-to-width-down/500?cb=20240707190207"
+    ],
+    [
+      "Serenno",
+      52,
+      "https://static.wikia.nocookie.net/starwars/images/b/b2/Serenno-Massacre.png/revision/latest/scale-to-width-down/500?cb=20130607043719"
+    ],
+    [
+      "Concord Dawn",
+      53,
+      "https://static.wikia.nocookie.net/starwars/images/8/84/Concord_Dawn_system.png/revision/latest/scale-to-width-down/500?cb=20160128214904"
+    ],
+    [
+      "Zolan",
+      54,
+      "https://static.wikia.nocookie.net/starwars/images/8/88/Zam_on_Zolan.jpg/revision/latest/scale-to-width-down/500?cb=20211030004312"
+    ],
+    [
+      "Ojom",
+      55,
+      "https://static.wikia.nocookie.net/starwars/images/3/38/Ojom-SWT.jpg/revision/latest/scale-to-width-down/350?cb=20220725221638"
+    ],
+    [
+      "Skako",
+      56,
+      "https://static.wikia.nocookie.net/starwars/images/a/a1/Aargau-Skako-SWT.jpg/revision/latest/scale-to-width-down/350?cb=20240706102820"
+    ],
+    [
+      "Muunilinst",
+      57,
+      "https://static.wikia.nocookie.net/starwars/images/4/49/JaemusMuunilinstEntralla_ROarticle.jpg/revision/latest?cb=20170520055933"
+    ],
+    [
+      "Shili",
+      58,
+      "https://static.wikia.nocookie.net/starwars/images/0/04/Shili_and_balnab_-_sw_galactic_atlas.png/revision/latest/scale-to-width-down/350?cb=20161003175431"
+    ],
+    [
+      "Kalee",
+      59,
+      "https://static.wikia.nocookie.net/starwars/images/c/c1/Kalee_TEA.jpg/revision/latest?cb=20200828221630"
+    ],
+    [
+      "Umbara",
+      60,
+      "https://static.wikia.nocookie.net/starwars/images/8/82/Umbara_TVE.png/revision/latest?cb=20211110071751"
+    ]
   ],
   "films": [
-    ["A New Hope", 1],
-    ["The Empire Strikes Back", 2],
-    ["Return of the Jedi", 3],
-    ["The Phantom Menace", 4],
-    ["Attack of the Clones", 5],
-    ["Revenge of the Sith", 6]
+    [
+      "A New Hope",
+      1,
+      "https://static.wikia.nocookie.net/starwars/images/0/06/Star_Wars_Style_A_poster_1977.jpg/revision/latest/scale-to-width-down/1000?cb=20100708051712"
+    ],
+    [
+      "The Empire Strikes Back",
+      2,
+      "https://static.wikia.nocookie.net/starwars/images/e/e4/Empire_strikes_back_old.jpg/revision/latest/scale-to-width-down/1000?cb=20161114072554"
+    ],
+    [
+      "Return of the Jedi",
+      3,
+      "https://static.wikia.nocookie.net/starwars/images/b/b2/ReturnOfTheJediPoster1983.jpg/revision/latest/scale-to-width-down/1000?cb=20170926193831"
+    ],
+    [
+      "The Phantom Menace",
+      4,
+      "https://static.wikia.nocookie.net/starwars/images/7/75/EPI_TPM_poster.png/revision/latest/scale-to-width-down/1000?cb=20130822171446"
+    ],
+    [
+      "Attack of the Clones",
+      5,
+      "https://static.wikia.nocookie.net/starwars/images/d/dd/Attack-Clones-Poster.jpg/revision/latest?cb=20180318125654"
+    ],
+    [
+      "Revenge of the Sith",
+      6,
+      "https://static.wikia.nocookie.net/starwars/images/e/e7/EPIII_RotS_poster.png/revision/latest/scale-to-width-down/1000?cb=20130822174232"
+    ]
   ],
   "species": [
-    ["Human", 1],
-    ["Droid", 2],
-    ["Wookie", 3],
-    ["Rodian", 4],
-    ["Hutt", 5],
-    ["Yoda's species", 6],
-    ["Trandoshan", 7],
-    ["Mon Calamari", 8],
-    ["Ewok", 9],
-    ["Sullustan", 10],
-    ["Neimodian", 11],
-    ["Gungan", 12],
-    ["Toydarian", 13],
-    ["Dug", 14],
-    ["Twi'lek", 15],
-    ["Aleena", 16],
-    ["Vulptereen", 17],
-    ["Xexto", 18],
-    ["Toong", 19],
-    ["Cerean", 20],
-    ["Nautolan", 21],
-    ["Zabrak", 22],
-    ["Tholothian", 23],
-    ["Iktotchi", 24],
-    ["Quermian", 25],
-    ["Kel Dor", 26],
-    ["Chagrian", 27],
-    ["Geonosian", 28],
-    ["Mirialan", 29],
-    ["Clawdite", 30],
-    ["Besalisk", 31],
-    ["Kaminoan", 32],
-    ["Skakoan", 33],
-    ["Muun", 34],
-    ["Togruta", 35],
-    ["Kaleesh", 36],
-    ["Pau'an", 37]
+    [
+      "Human",
+      1,
+      "https://static.wikia.nocookie.net/swse/images/6/6e/Human.png/revision/latest?cb=20211203233255"
+    ],
+    [
+      "Droid",
+      2,
+      "https://static.wikia.nocookie.net/starwars/images/e/e9/DroidTrio-SWED.png/revision/latest/scale-to-width-down/1000?cb=20221105222741"
+    ],
+    [
+      "Wookie",
+      3,
+      "https://static.wikia.nocookie.net/starwars/images/1/1e/Chewbacca-Fathead.png/revision/latest/scale-to-width-down/500?cb=20161108052810"
+    ],
+    [
+      "Rodian",
+      4,
+      "https://static.wikia.nocookie.net/starwars/images/d/d3/Rodian_DICE.png/revision/latest/scale-to-width-down/241?cb=20230723042944"
+    ],
+    [
+      "Hutt",
+      5,
+      "https://static.wikia.nocookie.net/starwars/images/c/cc/Jabba-USCVV.png/revision/latest/scale-to-width-down/500?cb=20230513042612"
+    ],
+    [
+      "Yoda's species",
+      6,
+      "https://static.wikia.nocookie.net/starwars/images/c/c3/Yoda_TPM_RotS.png/revision/latest/scale-to-width-down/500?cb=20130810185858"
+    ],
+    [
+      "Trandoshan",
+      7,
+      "https://static.wikia.nocookie.net/starwars/images/7/72/Bossk_full_body.png/revision/latest/scale-to-width-down/237?cb=20221008024202"
+    ],
+    [
+      "Mon Calamari",
+      8,
+      "https://static.wikia.nocookie.net/starwars/images/2/23/The_Mon_Calamari.png/revision/latest/scale-to-width-down/349?cb=20150801202537"
+    ],
+    [
+      "Ewok",
+      9,
+      "https://static.wikia.nocookie.net/starwars/images/a/a8/Ewoks_Encyclopedia.png/revision/latest/scale-to-width-down/350?cb=20210904221240"
+    ],
+    [
+      "Sullustan",
+      10,
+      "https://static.wikia.nocookie.net/starwars/images/0/04/NienNunbFull-SWBC62.png/revision/latest/scale-to-width-down/500?cb=20240218062248"
+    ],
+    [
+      "Neimodian",
+      11,
+      "https://static.wikia.nocookie.net/starwars/images/b/b0/NeimoidiansSWE.png/revision/latest/scale-to-width-down/310?cb=20140909101500"
+    ],
+    [
+      "Gungan",
+      12,
+      "https://static.wikia.nocookie.net/starwars/images/d/d5/Gungan_warrior.png/revision/latest/scale-to-width-down/500?cb=20160911012903"
+    ],
+    [
+      "Toydarian",
+      13,
+      "https://static.wikia.nocookie.net/starwars/images/6/6e/Wattoep2promotionalfull.jpg/revision/latest/scale-to-width-down/499?cb=20081222024850"
+    ],
+    [
+      "Dug",
+      14,
+      "https://static.wikia.nocookie.net/starwars/images/2/2c/Dug_full_body.png/revision/latest/scale-to-width-down/500?cb=20221227064014"
+    ],
+    [
+      "Twi'lek",
+      15,
+      "https://static.wikia.nocookie.net/starwars/images/5/54/Twileks.png/revision/latest/scale-to-width-down/289?cb=20151229035344"
+    ],
+    [
+      "Aleena",
+      16,
+      "https://static.wikia.nocookie.net/starwars/images/1/11/Unidentified_Aleena_3.png/revision/latest?cb=20121123055155"
+    ],
+    [
+      "Vulptereen",
+      17,
+      "https://static.wikia.nocookie.net/swse/images/1/19/Vulptereen.jpg/revision/latest/scale-to-width-down/284?cb=20190821142657"
+    ],
+    [
+      "Xexto",
+      18,
+      "https://static.wikia.nocookie.net/starwars/images/d/d9/Gasgano-USW.png/revision/latest/scale-to-width-down/241?cb=20221106160652"
+    ],
+    [
+      "Toong",
+      19,
+      "https://static.wikia.nocookie.net/starwars/images/1/18/BenQuadinarosFull-SWE.png/revision/latest/scale-to-width-down/249?cb=20160910192602"
+    ],
+    [
+      "Cerean",
+      20,
+      "https://static.wikia.nocookie.net/starwars/images/b/be/Mundi_bodyshot.png/revision/latest/scale-to-width-down/203?cb=20140603153008"
+    ],
+    [
+      "Nautolan",
+      21,
+      "https://static.wikia.nocookie.net/starwars/images/8/81/Kitfisto_detail.png/revision/latest/scale-to-width-down/298?cb=20170608230157"
+    ],
+    [
+      "Zabrak",
+      22,
+      "https://static.wikia.nocookie.net/starwars/images/a/a4/Zabrak_DICE.png/revision/latest/scale-to-width-down/500?cb=20230723013313"
+    ],
+    [
+      "Tholothian",
+      23,
+      "https://static.wikia.nocookie.net/starwars/images/6/66/Tholothian-UP.png/revision/latest/scale-to-width-down/236?cb=20190415010812"
+    ],
+    [
+      "Iktotchi",
+      24,
+      "https://static.wikia.nocookie.net/starwars/images/7/78/SaeseeTiin-USWNE.png/revision/latest/scale-to-width-down/217?cb=20241019231913"
+    ],
+    [
+      "Quermian",
+      25,
+      "https://static.wikia.nocookie.net/starwars/images/4/4f/Yarael_Poof_USW.png/revision/latest/scale-to-width-down/315?cb=20221203004322"
+    ],
+    [
+      "Kel Dor",
+      26,
+      "https://static.wikia.nocookie.net/starwars/images/f/fd/Plokoon_detail.png/revision/latest/scale-to-width-down/273?cb=20111116042533"
+    ],
+    [
+      "Chagrian",
+      27,
+      "https://static.wikia.nocookie.net/starwars/images/a/a5/MasAmeddaEpIFull-SWBC66.png/revision/latest/scale-to-width-down/500?cb=20240220005729"
+    ],
+    [
+      "Geonosian",
+      28,
+      "https://static.wikia.nocookie.net/starwars/images/a/ae/SunFac-SWCTP.png/revision/latest/scale-to-width-down/254?cb=20221030230749"
+    ],
+    [
+      "Mirialan",
+      29,
+      "https://static.wikia.nocookie.net/starwars/images/b/b7/Mirialan_Diplomat.png/revision/latest/scale-to-width-down/499?cb=20160207064156"
+    ],
+    [
+      "Clawdite",
+      30,
+      "https://static.wikia.nocookie.net/starwars/images/2/29/ZamClawdite-SWCTP.png/revision/latest/scale-to-width-down/499?cb=20240218201441"
+    ],
+    [
+      "Besalisk",
+      31,
+      "https://static.wikia.nocookie.net/starwars/images/1/1b/PongKrell-TCWs4BR2.png/revision/latest/scale-to-width-down/499?cb=20220909201732"
+    ],
+    [
+      "Kaminoan",
+      32,
+      "https://static.wikia.nocookie.net/starwars/images/e/e7/TaunWe-SWI210.png/revision/latest/scale-to-width-down/167?cb=20221017153337"
+    ],
+    [
+      "Skakoan",
+      33,
+      "https://static.wikia.nocookie.net/starwars/images/d/d2/Wat_Tambor_SWE.png/revision/latest/scale-to-width-down/285?cb=20160930025610"
+    ],
+    [
+      "Muun",
+      34,
+      "https://static.wikia.nocookie.net/starwars/images/2/2c/Muun_FDEV_Arden_Beckwith.png/revision/latest/scale-to-width-down/194?cb=20211218053459"
+    ],
+    [
+      "Togruta",
+      35,
+      "https://static.wikia.nocookie.net/starwars/images/a/af/ShaakTi-TCWs3BR1.png/revision/latest/scale-to-width-down/222?cb=20220909175007"
+    ],
+    [
+      "Kaleesh",
+      36,
+      "https://static.wikia.nocookie.net/starwars/images/d/d0/Kaleesh-Alien_Archive.jpg/revision/latest/scale-to-width-down/500?cb=20181011072919"
+    ],
+    [
+      "Pau'an",
+      37,
+      "https://static.wikia.nocookie.net/starwars/images/d/da/LampayFayFull-SWBC68.png/revision/latest/scale-to-width-down/500?cb=20240221041519"
+    ]
   ],
   "vehicles": [
-    ["Sand Crawler", 4],
-    ["T-16 skyhopper", 6],
-    ["X-34 landspeeder", 7],
-    ["TIE/LN starfighter", 8],
-    ["Snowspeeder", 14],
-    ["TIE bomber", 16],
-    ["AT-AT", 18],
-    ["AT-ST", 19],
-    ["Storm IV Twin-Pod cloud car", 20],
-    ["Sail barge", 24],
-    ["Bantha-II cargo skiff", 25],
-    ["TIE/IN interceptor", 26],
-    ["Imperial Speeder Bike", 30],
-    ["Vulture Droid", 33],
-    ["Multi-Troop Transport", 34],
-    ["Armored Assault Tank", 35],
-    ["Single Trooper Aerial Platform", 36],
-    ["C-9979 landing craft", 37],
-    ["Tribubble bongo", 38],
-    ["Sith speeder", 42],
-    ["Zephyr-G swoop bike", 44],
-    ["Koro-2 Exodrive airspeeder", 45],
-    ["XJ-6 airspeeder", 46],
-    ["LAAT/i", 50],
-    ["LAAT/c", 51],
-    ["AT-TE", 53],
-    ["SPHA", 54],
-    ["Flitknot speeder", 55],
-    ["Neimoidian shuttle", 56],
-    ["Geonosian starfighter", 57],
-    ["Tsmeu-6 personal wheel bike", 60],
-    ["Emergency Firespeeder", 62],
-    ["Droid tri-fighter", 67],
-    ["Oevvaor jet catamaran", 69],
-    ["Raddaugh Gnasp fluttercraft", 70],
-    ["Clone turbo tank", 71],
-    ["Corporate Alliance tank droid", 72],
-    ["Droid gunship", 73],
-    ["AT-RT", 76]
+    [
+      "Sandcrawler",
+      4,
+      "https://static.wikia.nocookie.net/starwars/images/f/ff/Sandcrawler.png/revision/latest/scale-to-width-down/1000?cb=20130812001443"
+    ],
+    [
+      "T-16 skyhopper",
+      6,
+      "https://static.wikia.nocookie.net/starwars/images/f/f2/T-16_skyhopper_-_SW_20.png/revision/latest/scale-to-width-down/500?cb=20160805002611"
+    ],
+    [
+      "X-34 landspeeder",
+      7,
+      "https://static.wikia.nocookie.net/starwars/images/b/be/X-34-TGTB.png/revision/latest/scale-to-width-down/500?cb=20211204185714"
+    ],
+    [
+      "TIE/LN starfighter",
+      8,
+      "https://static.wikia.nocookie.net/starwars/images/9/92/TIEfighter2-Fathead.png/revision/latest/scale-to-width-down/500?cb=20161109040841"
+    ],
+    [
+      "Snowspeeder",
+      14,
+      "https://static.wikia.nocookie.net/starwars/images/2/27/Rebel_snowspeeder_SWL.png/revision/latest/scale-to-width-down/500?cb=20190515060930"
+    ],
+    [
+      "TIE bomber",
+      16,
+      "https://static.wikia.nocookie.net/starwars/images/0/02/TIEbomber-RFGE.png/revision/latest/scale-to-width-down/1000?cb=20240803050209"
+    ],
+    [
+      "AT-AT",
+      18,
+      "https://static.wikia.nocookie.net/starwars/images/1/16/AT-AT_2_Fathead.png/revision/latest/scale-to-width-down/500?cb=20161108042721"
+    ],
+    [
+      "AT-ST",
+      19,
+      "https://static.wikia.nocookie.net/starwars/images/f/ff/ATST-SWBdice.png/revision/latest/scale-to-width-down/499?cb=20230723050455"
+    ],
+    [
+      "Storm IV Twin-Pod cloud car",
+      20,
+      "https://static.wikia.nocookie.net/starwars/images/3/3b/Cloud-car-v2.png/revision/latest/scale-to-width-down/500?cb=20160617064429"
+    ],
+    [
+      "Sail barge",
+      24,
+      "https://static.wikia.nocookie.net/starwars/images/8/8c/Sail_Barge.png/revision/latest/scale-to-width-down/500?cb=20130331043828"
+    ],
+    [
+      "Bantha-II cargo skiff",
+      25,
+      "https://static.wikia.nocookie.net/starwars/images/c/cc/Bantha-II_Cargo_Skiff_BG.png/revision/latest/scale-to-width-down/500?cb=20220911001931"
+    ],
+    [
+      "TIE/IN interceptor",
+      26,
+      "https://static.wikia.nocookie.net/starwars/images/f/f5/TIE_Interceptor_BF.png/revision/latest/scale-to-width-down/499?cb=20170501054325"
+    ],
+    [
+      "Imperial Speeder Bike",
+      30,
+      "https://static.wikia.nocookie.net/starwars/images/6/64/74zSpeederbike-NEGVV.png/revision/latest/scale-to-width-down/500?cb=20170410035749"
+    ],
+    [
+      "Vulture Droid",
+      33,
+      "https://static.wikia.nocookie.net/starwars/images/a/a4/CISVultureDroidWalk-TCW.png/revision/latest/scale-to-width-down/500?cb=20231010234254"
+    ],
+    [
+      "Multi-Troop Transport",
+      34,
+      "https://static.wikia.nocookie.net/starwars/images/a/ab/MTT_BF2.png/revision/latest/scale-to-width-down/500?cb=20170825000638"
+    ],
+    [
+      "Armored Assault Tank",
+      35,
+      "https://static.wikia.nocookie.net/starwars/images/2/2d/AAT_swtcgvg.jpg/revision/latest/scale-to-width-down/500?cb=20080427021930"
+    ],
+    [
+      "Single Trooper Aerial Platform",
+      36,
+      "https://static.wikia.nocookie.net/starwars/images/c/ce/STAP-SWE.png/revision/latest/scale-to-width-down/250?cb=20160914004451"
+    ],
+    [
+      "C-9979 landing craft",
+      37,
+      "https://static.wikia.nocookie.net/starwars/images/f/f0/C9979_ep1ig.jpg/revision/latest/scale-to-width-down/500?cb=20120226042037"
+    ],
+    [
+      "Tribubble bongo",
+      38,
+      "https://static.wikia.nocookie.net/starwars/images/d/d8/Bongo.jpg/revision/latest/scale-to-width-down/500?cb=20080430201913"
+    ],
+    [
+      "Sith speeder",
+      42,
+      "https://static.wikia.nocookie.net/starwars/images/6/6f/FC20_speeder_bike_SWFFfb.png/revision/latest/scale-to-width-down/500?cb=20221008165007"
+    ],
+    [
+      "Zephyr-G swoop bike",
+      44,
+      "https://static.wikia.nocookie.net/starwars/images/b/b8/OwenLarsSwoopBike-SWCTP.png/revision/latest?cb=20230909203327"
+    ],
+    [
+      "Koro-2 Exodrive airspeeder",
+      45,
+      "https://static.wikia.nocookie.net/starwars/images/2/22/Koro2_uvg.jpg/revision/latest/scale-to-width-down/500?cb=20130519005132"
+    ],
+    [
+      "XJ-6 airspeeder",
+      46,
+      "https://static.wikia.nocookie.net/starwars/images/f/f6/XJ-6_hotrod.jpg/revision/latest/scale-to-width-down/500?cb=20080218042929"
+    ],
+    [
+      "LAAT/i",
+      50,
+      "https://static.wikia.nocookie.net/starwars/images/c/c5/Low_Altitude_Assault_Transport.png/revision/latest/scale-to-width-down/500?cb=20240907154021"
+    ],
+    [
+      "LAAT/c",
+      51,
+      "https://static.wikia.nocookie.net/starwars/images/6/63/LAATc_USW.png/revision/latest/scale-to-width-down/499?cb=20221007141521"
+    ],
+    [
+      "AT-TE",
+      53,
+      "https://static.wikia.nocookie.net/starwars/images/0/04/ATTE-TCW.png/revision/latest/scale-to-width-down/499?cb=20241019023147"
+    ],
+    [
+      "SPHA",
+      54,
+      "https://static.wikia.nocookie.net/starwars/images/c/c0/SPHA-SWCTP.png/revision/latest/scale-to-width-down/499?cb=20230917162800"
+    ],
+    [
+      "Flitknot speeder",
+      55,
+      "https://static.wikia.nocookie.net/starwars/images/d/d7/FlitknotSpeeder-WSMI.png/revision/latest/scale-to-width-down/500?cb=20221030050107"
+    ],
+    [
+      "Neimoidian shuttle",
+      56,
+      "https://static.wikia.nocookie.net/starwars/images/1/13/NeimoidianShuttleSecretWeapons.png/revision/latest/scale-to-width-down/500?cb=20131021234654"
+    ],
+    [
+      "Geonosian starfighter",
+      57,
+      "https://static.wikia.nocookie.net/starwars/images/8/82/Nantex-class_fighters.png/revision/latest/scale-to-width-down/500?cb=20200120054757"
+    ],
+    [
+      "Tsmeu-6 personal wheel bike",
+      60,
+      "https://static.wikia.nocookie.net/starwars/images/d/d7/GrievousWheelBike-WSMI.png/revision/latest/scale-to-width-down/500?cb=20221008170103"
+    ],
+    [
+      "Emergency Firespeeder",
+      62,
+      "https://static.wikia.nocookie.net/starwars/images/6/66/Fire_ship.jpg/revision/latest/scale-to-width-down/350?cb=20051220124720"
+    ],
+    [
+      "Droid tri-fighter",
+      67,
+      "https://static.wikia.nocookie.net/starwars/images/a/a0/DroidTrifighter-TCWs3BR2.png/revision/latest/scale-to-width-down/500?cb=20230919010425"
+    ],
+    [
+      "Oevvaor jet catamaran",
+      69,
+      "https://static.wikia.nocookie.net/starwars/images/6/60/Wookieeflyingcat.jpg/revision/latest/scale-to-width-down/500?cb=20150919124829"
+    ],
+    [
+      "Raddaugh Gnasp fluttercraft",
+      70,
+      "https://static.wikia.nocookie.net/starwars/images/0/0a/RaddaughGnaspFluttercraft-SWL.png/revision/latest/scale-to-width-down/500?cb=20240708004504"
+    ],
+    [
+      "Clone turbo tank",
+      71,
+      "https://static.wikia.nocookie.net/starwars/images/8/81/HAVwA6Juggernauts-SWBoL.png/revision/latest/scale-to-width-down/500?cb=20230806162213"
+    ],
+    [
+      "Corporate Alliance tank droid",
+      72,
+      "https://static.wikia.nocookie.net/starwars/images/7/73/Tank_droid_TCW.png/revision/latest/scale-to-width-down/1000?cb=20170703051940"
+    ],
+    [
+      "Droid gunship",
+      73,
+      "https://static.wikia.nocookie.net/starwars/images/6/6d/DroidGunship-DB.png/revision/latest/scale-to-width-down/499?cb=20241003001621"
+    ],
+    [
+      "AT-RT",
+      76,
+      "https://static.wikia.nocookie.net/starwars/images/5/5c/AT-RT_BF2.png/revision/latest/scale-to-width-down/500?cb=20170825000646"
+    ]
   ],
   "starships": [
-    ["CR90 corvette", 2],
-    ["Star Destroyer", 3],
-    ["Sentinel-class landing craft", 5],
-    ["Death Star", 9],
-    ["Millennium Falcon", 10],
-    ["Y-wing", 11],
-    ["X-wing", 12],
-    ["TIE Advanced x1", 13],
-    ["Executor", 15],
-    ["Rebel transport", 17],
-    ["Slave 1", 21],
-    ["Imperial shuttle", 22],
-    ["EF76 Nebulon-B escort frigate", 23],
-    ["Calamari Cruiser", 27],
-    ["A-wing", 28],
-    ["B-wing", 29],
-    ["Republic Cruiser", 31],
-    ["Droid control ship", 32],
-    ["Naboo fighter", 39],
-    ["Naboo Royal Starship", 40],
-    ["Scimitar", 41],
-    ["J-type diplomatic barge", 43],
-    ["AA-9 Coruscant freighter", 47],
-    ["Jedi starfighter", 48],
-    ["H-type Nubian yacht", 49],
-    ["Republic Assault ship", 52],
-    ["Solar Sailer", 58],
-    ["Trade Federation cruiser", 59],
-    ["Theta-class T-2c shuttle", 61],
-    ["Republic attack cruiser", 63],
-    ["Naboo star skiff", 64],
-    ["Jedi Interceptor", 65],
-    ["arc-170", 66],
-    ["Banking clan frigte", 68],
-    ["Belbullab-22 starfighter", 74],
-    ["V-wing", 75]
+    [
+      "CR90 corvette",
+      2,
+      "https://static.wikia.nocookie.net/starwars/images/6/66/CR90corvette-BTMF18.png/revision/latest/scale-to-width-down/500?cb=20240908033909"
+    ],
+    [
+      "Star Destroyer",
+      3,
+      "https://static.wikia.nocookie.net/starwars/images/e/e4/ImperialClassStarDestroyer-TSWB.png/revision/latest/scale-to-width-down/1000?cb=20230515235250"
+    ],
+    [
+      "Sentinel-class landing craft",
+      5,
+      "https://static.wikia.nocookie.net/starwars/images/5/5b/Imperial_Sentinel-class_shuttle.png/revision/latest/scale-to-width-down/500?cb=20161008235432"
+    ],
+    [
+      "Death Star",
+      9,
+      "https://static.wikia.nocookie.net/starwars/images/7/70/DSI-HDapproach.png/revision/latest/scale-to-width-down/500?cb=20130221005853"
+    ],
+    [
+      "Millennium Falcon",
+      10,
+      "https://static.wikia.nocookie.net/starwars/images/5/52/Millennium_Falcon_Fathead_TROS.png/revision/latest/scale-to-width-down/500?cb=20221029015218"
+    ],
+    [
+      "Y-wing",
+      11,
+      "https://static.wikia.nocookie.net/starwars/images/8/81/Y-wing.png/revision/latest/scale-to-width-down/500?cb=20161110013308"
+    ],
+    [
+      "X-wing",
+      12,
+      "https://static.wikia.nocookie.net/starwars/images/0/00/Xwing-ROOCE.png/revision/latest/scale-to-width-down/1000?cb=20230516042654"
+    ],
+    [
+      "TIE Advanced x1",
+      13,
+      "https://static.wikia.nocookie.net/starwars/images/1/1d/Vader_TIEAdvanced_SWB.png/revision/latest/scale-to-width-down/500?cb=20160915042032"
+    ],
+    [
+      "Executor",
+      15,
+      "https://static.wikia.nocookie.net/starwars/images/3/30/Executor_BF2.png/revision/latest/scale-to-width-down/500?cb=20230405071103"
+    ],
+    [
+      "Rebel transport",
+      17,
+      "https://static.wikia.nocookie.net/starwars/images/4/44/GR-75MediumTransport-100Scenes.png/revision/latest/scale-to-width-down/500?cb=20221105213502"
+    ],
+    [
+      "Slave 1",
+      21,
+      "https://static.wikia.nocookie.net/starwars/images/b/ba/Slave_I_DICE.png/revision/latest/scale-to-width-down/500?cb=20230723041624"
+    ],
+    [
+      "Imperial shuttle",
+      22,
+      "https://static.wikia.nocookie.net/starwars/images/a/a9/Imperial_shuttle.png/revision/latest/scale-to-width-down/500?cb=20150827042115"
+    ],
+    [
+      "EF76 Nebulon-B escort frigate",
+      23,
+      "https://static.wikia.nocookie.net/starwars/images/7/71/NebulonB-SWS.png/revision/latest/scale-to-width-down/500?cb=20210303023412"
+    ],
+    [
+      "Calamari Cruiser",
+      27,
+      "https://static.wikia.nocookie.net/starwars/images/6/63/MonCalline.jpg/revision/latest/scale-to-width-down/268?cb=20080307201848"
+    ],
+    [
+      "A-wing",
+      28,
+      "https://static.wikia.nocookie.net/starwars/images/8/8d/A-wing_DICE.png/revision/latest/scale-to-width-down/1000?cb=20161021230115"
+    ],
+    [
+      "B-wing",
+      29,
+      "https://static.wikia.nocookie.net/starwars/images/9/9f/B-wing-Squadronds.png/revision/latest/scale-to-width-down/500?cb=20210722003428"
+    ],
+    [
+      "Republic Cruiser",
+      31,
+      "https://static.wikia.nocookie.net/starwars/images/8/81/Radiant7_negvv.png/revision/latest/scale-to-width-down/499?cb=20170411231733"
+    ],
+    [
+      "Droid control ship",
+      32,
+      "https://static.wikia.nocookie.net/starwars/images/0/0a/Lucrehulk-Battlefront-2-Render.png/revision/latest/scale-to-width-down/500?cb=20221114195931"
+    ],
+    [
+      "Naboo fighter",
+      39,
+      "https://static.wikia.nocookie.net/starwars/images/6/64/N-1_Starfighter.png/revision/latest/scale-to-width-down/500?cb=20240909024317"
+    ],
+    [
+      "Naboo Royal Starship",
+      40,
+      "https://static.wikia.nocookie.net/starwars/images/9/9e/Naboo_Royal_Starship.png/revision/latest/scale-to-width-down/500?cb=20161019065403"
+    ],
+    [
+      "Scimitar",
+      41,
+      "https://static.wikia.nocookie.net/starwars/images/1/1c/Scimitar-USC.png/revision/latest/scale-to-width-down/500?cb=20190604143506"
+    ],
+    [
+      "J-type diplomatic barge",
+      43,
+      "https://static.wikia.nocookie.net/starwars/images/2/2b/Royalcruiser.jpg/revision/latest/scale-to-width-down/500?cb=20091201140703"
+    ],
+    [
+      "AA-9 Coruscant freighter",
+      47,
+      "https://static.wikia.nocookie.net/starwars/images/c/c7/Aa9coruscantfreighter.jpg/revision/latest/scale-to-width-down/500?cb=20091201131352"
+    ],
+    [
+      "Jedi starfighter",
+      48,
+      "https://static.wikia.nocookie.net/starwars/images/7/7a/Jsf_duo2.jpg/revision/latest?cb=20060706121723"
+    ],
+    [
+      "H-type Nubian yacht",
+      49,
+      "https://static.wikia.nocookie.net/starwars/images/8/87/H-Type_Nubian_yacht_USW.png/revision/latest/scale-to-width-down/500?cb=20241019020944"
+    ],
+    [
+      "Republic Assault ship",
+      52,
+      "https://static.wikia.nocookie.net/starwars/images/7/70/Acclamator-TCWIV.png/revision/latest?cb=20221105061503"
+    ],
+    [
+      "Solar Sailer",
+      58,
+      "https://static.wikia.nocookie.net/starwars/images/1/10/CountDookusSolarSailer-WotF.png/revision/latest/scale-to-width-down/500?cb=20200518063614"
+    ],
+    [
+      "Trade Federation cruiser",
+      59,
+      "https://static.wikia.nocookie.net/starwars/images/4/47/InvisibleHandStarboard-FF.png/revision/latest/scale-to-width-down/500?cb=20221119215500"
+    ],
+    [
+      "Theta-class T-2c shuttle",
+      61,
+      "https://static.wikia.nocookie.net/starwars/images/8/8e/Theta-class_shuttle.png/revision/latest/scale-to-width-down/500?cb=20220304110027"
+    ],
+    [
+      "Republic attack cruiser",
+      63,
+      "https://static.wikia.nocookie.net/starwars/images/c/c8/Imperialattackcruisers.png/revision/latest/scale-to-width-down/500?cb=20140317112248"
+    ],
+    [
+      "Naboo star skiff",
+      64,
+      "https://static.wikia.nocookie.net/starwars/images/d/df/Naboo_star_skiff_1.png/revision/latest/scale-to-width-down/500?cb=20130212042348"
+    ],
+    [
+      "Jedi Interceptor",
+      65,
+      "https://static.wikia.nocookie.net/starwars/images/7/7e/Eta-2_Actis-class_light_interceptor_TFOWM.png/revision/latest/scale-to-width-down/500?cb=20190629213415"
+    ],
+    [
+      "arc-170",
+      66,
+      "https://static.wikia.nocookie.net/starwars/images/b/ba/ARC170starfighter.jpg/revision/latest/scale-to-width-down/1000?cb=20111112062600"
+    ],
+    [
+      "Banking clan frigte",
+      68,
+      "https://static.wikia.nocookie.net/starwars/images/a/a7/CISMunificent-TCW.png/revision/latest/scale-to-width-down/1000?cb=20231010233644"
+    ],
+    [
+      "Belbullab-22 starfighter",
+      74,
+      "https://static.wikia.nocookie.net/starwars/images/2/21/SoullessOne-TCW.png/revision/latest/scale-to-width-down/500?cb=20221117145011"
+    ],
+    [
+      "V-wing",
+      75,
+      "https://static.wikia.nocookie.net/starwars/images/a/a9/V-wing_BF2.png/revision/latest/scale-to-width-down/1000?cb=20170825000555"
+    ]
   ]
 }

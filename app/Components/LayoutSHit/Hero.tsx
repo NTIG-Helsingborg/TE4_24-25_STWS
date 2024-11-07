@@ -12,17 +12,14 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">The tale of Bananakin</h1>
-          <p className="mb-5">
-            "- Obi-wan-banobi :You were the chosen one! It was sait you would
-            destroy the green, not the brown us all. You were to bring balance
-            to the bunch not leave us in darkness.
+          <h1 className="mb-5 text-5xl font-bold">STWS KNOWLAGE</h1>
+          <p className="mb-5 font-bold">This is place of knowlage</p>
+          <p className="mb-5 font-bold">
+            Beliefes does not matter here Sith or Jedi
           </p>
-          <p className="mb-5">-Bananakin : I hate you!</p>
-          <p className="mb-5">
-            -Obi-wan-banobi: you were my brother Bananakin! I loved you.
+          <p className="mb-5 font-bold">
+            This is a place where those untaught and return wiser
           </p>
-          <button className="btn btn-primary">Get Started</button>
         </div>
       </div>
     </div>
