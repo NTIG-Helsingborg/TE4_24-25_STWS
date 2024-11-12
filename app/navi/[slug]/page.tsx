@@ -15,5 +15,14 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
     </>
   );
 };
-
+export function generateStaticParams() {
+  return [
+    {slug:"people"},
+    {slug:"planets"},
+    {slug:"films"},
+    {slug:"species"},
+    {slug:"vehicles"},
+    {slug:"starships"}
+  ]
+}
 export default page;
