@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Footer from "./Components/LayoutSHit/Footer";
 import Hero from "./Components/LayoutSHit/Hero";
 import Drawer from "./Components/LayoutSHit/Drawer";
@@ -15,12 +16,12 @@ const test = () => {
         <Timer />
         <Content />
         <div className="flex space-x-16">
-          <a
+          <Link
             href="/navigation"
             className="btn btn-wide ms-8  btn-base-300 text-blue-700"
           >
             Library of Knowlage
-          </a>
+          </Link>
           <Randomizer />
         </div>
       </Drawer>

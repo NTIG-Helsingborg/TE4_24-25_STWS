@@ -1,5 +1,6 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface Props {
   header: string;
@@ -25,9 +26,9 @@ const Coob = ({ header, img, text, cart }: Props) => {
           <h2 className="card-title">{header}!</h2>
           <p>{text}</p>
           <div className="card-actions">
-            <a href={cart} className="btn btn-primary">
+            <Link href={cart} className="btn btn-primary">
               Closer look
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Link from "next/link";
 import Usr_btns from "../usr_buttons";
 interface DrawerProps {
   children: React.ReactNode;
@@ -35,25 +36,25 @@ const Drawer = ({ children }: DrawerProps) => {
           <ul className="fenix-regular">
             {/* Sidebar content */}
             <li>
-              <a href="/" className="">
+              <Link href="/" className="">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/navigation" className="">
+              <Link href="/navigation" className="">
                 Navigation
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/profile" className="">
+              <Link href="/profile" className="">
                 Profile
-              </a>
+              </Link>
             </li>
             -------------------
             <li>
-              <a href="/navi/planets" className="">
+              <Link href="/navi/planets" className="">
                 Planets
-              </a>
+              </Link>
             </li>
             <li>
               <div className="flex px-1 basis-1/3 items-center justify-center absolute inset-x-0 bottom-0">
@@ -61,29 +62,29 @@ const Drawer = ({ children }: DrawerProps) => {
                   <Usr_btns />
                 </div>
               </div>
-              <a href="/navi/people" className="">
+              <Link href="/navi/people" className="">
                 People
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/navi/vehicles" className="">
+              <Link href="/navi/vehicles" className="">
                 Vehicles
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/navi/starships" className="">
+              <Link href="/navi/starships" className="">
                 Starships
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/navi/films" className="">
+              <Link href="/navi/films" className="">
                 Films
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/navi/species" className="">
+              <Link href="/navi/species" className="">
                 Species
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

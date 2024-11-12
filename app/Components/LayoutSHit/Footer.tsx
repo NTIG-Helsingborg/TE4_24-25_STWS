@@ -1,5 +1,7 @@
 import React from "react";
 import Circle from "../ReusableComponents/Circle";
+import Link from "next/link";
+
 
 const Footer = () => {
   return (
@@ -13,11 +15,11 @@ const Footer = () => {
           <Circle text=""></Circle>
         </div>
         <div className="flex space-x-7 justify-center mt-5">
-         <a href="/">  <span className="">Home</span></a>
-        <a href="/navigation" ><span className="/">Navigation</span> </a>
-        <a href="/profile" ><span className="">Profile</span></a>
-        <a href="" > <span className="/pr">Contact us</span></a>
-         <a href=""> <span className="">Our team</span></a>
+         <Link href="/">  <span className="">Home</span></Link>
+        <Link href="/navigation" ><span className="/">Navigation</span> </Link>
+        <Link href="/profile" ><span className="">Profile</span></Link>
+        <Link href="" > <span className="/pr">Contact us</span></Link>
+         <Link href=""> <span className="">Our team</span></Link>
         </div>
       </div>
       <div className="w-screen text-center fenix-regular p-2 bg-gray-500">
