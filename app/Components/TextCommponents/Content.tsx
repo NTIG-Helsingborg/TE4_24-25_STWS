@@ -1,8 +1,6 @@
 import React from "react";
 import Title from "../LayoutSHit/Title";
 import AboutText from "./AboutText";
-import Read from "../FunctioningShit/Read";
-import Drawer from "../LayoutSHit/Drawer";
 
 const Content = async () => {
   return (

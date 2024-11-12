@@ -60,8 +60,7 @@ const Card = ({
   eye_color,
   birth_year,
   gender,
-  homeworld,
-  species,
+
 
   model,
   length,
@@ -72,7 +71,6 @@ const Card = ({
   designation,
   average_height,
   skin_colors,
-  hair_colors,
   average_lifespan,
   language,
 

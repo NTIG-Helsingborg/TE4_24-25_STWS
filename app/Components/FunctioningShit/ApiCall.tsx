@@ -35,6 +35,7 @@ async function getPost(catagory: Catagory, id: number): Promise<Post | null> {
     if (!post) notFound(); // If post not found, trigger 404
     return post;
   } catch (error) {
+    console.log(error)
     return null;
   }
 }
@@ -48,6 +49,7 @@ export async function generateStaticParams(catagory: Catagory) {
       id: post.id,
     }));
   } catch (error) {
+    console.log(error)
     return []; // Handle the case where fetching fails
   }
 }

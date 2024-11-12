@@ -1,12 +1,11 @@
 // pages/profile.tsx
 "use client";
-import React, { useEffect, useState, useRef } from "react";
-import FavoriteButton from "./FavoriteButton"; // Import the FavoriteButton component
+import React, { useEffect, useState} from "react";
+
 import ClientConverter from "../ClientConverter";
 
 const Profile = () => {
   const [favorites, setFavorites] = useState<string[]>([]); // State to hold favorite items
-  const favoriteButtonRefs = useRef<(HTMLButtonElement | null)[]>([]); // Ref to hold button elements
 
   // Load favorites from local storage when the component mounts
   useEffect(() => {

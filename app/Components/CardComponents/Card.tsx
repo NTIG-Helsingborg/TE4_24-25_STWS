@@ -8,7 +8,7 @@ interface CardProps {
   climate?: string;
 }
 
-const Carde = ({ itemID, src, name, climate }: CardProps) => {
+const Carde = ({ itemID, src, name}: CardProps) => {
   //const isFavorited = favItems.includes(itemID);
 
   return (
