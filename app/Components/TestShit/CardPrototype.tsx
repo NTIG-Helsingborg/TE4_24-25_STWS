@@ -123,6 +123,7 @@ const Card = ({
               <ul className="w-full lg:w-1/3">
                 <li>Height: {height}</li>
                 <li>Mass: {mass}</li>
+                <li>Gender: {gender}</li>
                 <li>Hair color: {hair_color}</li>
                 <li>Eye color: {eye_color}</li>
                 <li>Birth year: {birth_year}</li>

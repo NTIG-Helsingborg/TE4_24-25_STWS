@@ -59,7 +59,7 @@ export default function Test({
         })
         .flat(1)
         .map((val, i) => (
-          <ClientConverter key={i} itemID={val} />
+          <ClientConverter key={i} itemID={val} smort={true} />
         ))}
 
       <div className="flex flex-row justify-center space-x-10 mt-4">

@@ -14,7 +14,7 @@ const Button = ({ action, text }: BtnProps) => {
     <div>
       {/* Button to open the drawer */}
       <button
-        className="btn btn-wide bg-error text-black font-bold ms-8"
+        className="btn btn-wide btn-base-300 text-red-800 font-bold ms-8"
         onClick={action}
       >
         {text}

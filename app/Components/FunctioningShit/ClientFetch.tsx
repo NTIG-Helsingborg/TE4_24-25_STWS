@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import "@/api_links"; // Import your API links
 import Card from "../TestShit/CardPrototype";
+import Carde from "../CardComponents/Card";
 
 interface Post {
   id: number;
@@ -68,9 +69,11 @@ async function fetchPost(catagory: Catagory, id: number): Promise<Post | null> {
 export default function ClientFetch({
   params,
   source,
+  smort,
 }: {
   params: { id: number; catagory: Catagory };
   source: string;
+  smort?: boolean;
 }) {
   const { catagory, id } = params; // Destructure `catagory` and `id`
   const [post, setPost] = useState<Post | null>(null);
@@ -98,132 +101,125 @@ export default function ClientFetch({
   if (error) {
     return <div>{error}</div>; // Render error message
   }
-
-  switch (catagory) {
-    case "planets":
-      return (
-        <div>
-          {post && (
-            <Card
-              name={post.name}
-              src={source}
-              catagory={catagory}
-              itemID={`${catagory}:${id}`} // Set `itemID` using template literals
-              diameter={post.diameter}
-              climate={post.climate}
-              gravity={post.gravity}
-              terrain={post.terrain}
-              population={post.population}
-            />
-          )}
-        </div>
-      );
-      break;
-    case "people":
-      return (
-        <div>
-          {post && (
-            <Card
-              name={post.name}
-              src={source}
-              catagory={catagory}
-              itemID={`${catagory}:${id}`} // Set `itemID` using template literals
-              height={post.height}
-              mass={post.mass}
-              hair_color={post.hair_color}
-              eye_color={post.eye_color}
-              birth_year={post.birth_year}
-              gender={post.gender}
-              homeworld={post.homeworld}
-              species={post.species}
-            />
-          )}
-        </div>
-      );
-      break;
-    case "species":
-      return (
-        <div>
-          {post && (
-            <Card
-              name={post.name}
-              src={source}
-              catagory={catagory}
-              itemID={`${catagory}:${id}`} // Set `itemID` using template literals
-              designation={post.designation}
-              average_height={post.average_height}
-              skin_colors={post.skin_colors}
-              average_lifespan={post.average_lifespan}
-              language={post.language}
-            />
-          )}
-        </div>
-      );
-      break;
-    case "starships":
-      return (
-        <div>
-          {post && (
-            <Card
-              name={post.name}
-              src={source}
-              catagory={catagory}
-              itemID={`${catagory}:${id}`} // Set `itemID` using template literals
-              model={post.model}
-              length={post.length}
-              crew={post.crew}
-              pilots={post.pilots}
-              classification={post.classification}
-            />
-          )}
-        </div>
-      );
-      break;
-    case "vehicles":
-      return (
-        <div>
-          {post && (
-            <Card
-              name={post.name}
-              src={source}
-              catagory={catagory}
-              itemID={`${catagory}:${id}`} // Set `itemID` using template literals
-              vehicle_class={post.vehicle_class}
-              crew={post.crew}
-            />
-          )}
-        </div>
-      );
-      break;
-    case "films":
-      return (
-        <div>
-          {post && (
-            <Card
-              name={post.name}
-              src={source}
-              catagory={catagory}
-              itemID={`${catagory}:${id}`} // Set `itemID` using template literals
-              episode_id={post.episode_id}
-              release_date={post.release_date}
-              title={post.title}
-            />
-          )}
-        </div>
-      );
-      break;
+  console.log(smort);
+  if (smort == true) {
+    return (
+      <Carde name={post?.name} itemID={`${catagory}:${id}`} src={source} />
+    );
+  } else {
+    switch (catagory) {
+      case "planets":
+        return (
+          <>
+            {post && (
+              <Card
+                name={post.name}
+                src={source}
+                catagory={catagory}
+                itemID={`${catagory}:${id}`} // Set `itemID` using template literals
+                diameter={post.diameter}
+                climate={post.climate}
+                gravity={post.gravity}
+                terrain={post.terrain}
+                population={post.population}
+              />
+            )}
+          </>
+        );
+        break;
+      case "people":
+        return (
+          <>
+            {post && (
+              <Card
+                name={post.name}
+                src={source}
+                catagory={catagory}
+                itemID={`${catagory}:${id}`} // Set `itemID` using template literals
+                height={post.height}
+                mass={post.mass}
+                hair_color={post.hair_color}
+                eye_color={post.eye_color}
+                birth_year={post.birth_year}
+                gender={post.gender}
+                homeworld={post.homeworld}
+                species={post.species}
+              />
+            )}
+          </>
+        );
+        break;
+      case "species":
+        return (
+          <>
+            {post && (
+              <Card
+                name={post.name}
+                src={source}
+                catagory={catagory}
+                itemID={`${catagory}:${id}`} // Set `itemID` using template literals
+                designation={post.designation}
+                average_height={post.average_height}
+                skin_colors={post.skin_colors}
+                average_lifespan={post.average_lifespan}
+                language={post.language}
+              />
+            )}
+          </>
+        );
+        break;
+      case "starships":
+        return (
+          <>
+            {post && (
+              <Card
+                name={post.name}
+                src={source}
+                catagory={catagory}
+                itemID={`${catagory}:${id}`} // Set `itemID` using template literals
+                model={post.model}
+                length={post.length}
+                crew={post.crew}
+                pilots={post.pilots}
+                classification={post.classification}
+              />
+            )}
+          </>
+        );
+        break;
+      case "vehicles":
+        return (
+          <>
+            {post && (
+              <Card
+                name={post.name}
+                src={source}
+                catagory={catagory}
+                itemID={`${catagory}:${id}`} // Set `itemID` using template literals
+                vehicle_class={post.vehicle_class}
+                crew={post.crew}
+              />
+            )}
+          </>
+        );
+        break;
+      case "films":
+        return (
+          <>
+            {post && (
+              <Card
+                name={post.name}
+                src={source}
+                catagory={catagory}
+                itemID={`${catagory}:${id}`} // Set `itemID` using template literals
+                episode_id={post.episode_id}
+                release_date={post.release_date}
+                title={post.title}
+              />
+            )}
+          </>
+        );
+        break;
+    }
   }
-
-  return (
-    <>
-      {post && (
-        <Card
-          name={post.name}
-          src={source}
-          catagory={catagory}
-          itemID={`${catagory}:${id}`} // Set `itemID` using template literals
-        />
-      )}
-    </>
-  );
 }

@@ -7,7 +7,9 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   return (
     <>
       <Drawer>
-        <Test initialIndex={0} length={10} type={(await params).slug} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <Test initialIndex={0} length={12} type={(await params).slug} />
+        </div>
       </Drawer>
       <Footer />
     </>

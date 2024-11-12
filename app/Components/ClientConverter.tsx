@@ -6,9 +6,10 @@ import ClientFetch from "./FunctioningShit/ClientFetch";
 
 interface CardProps {
   itemID: string;
+  smort?: boolean;
 }
 
-const Converter = ({ itemID }: CardProps) => {
+const Converter = ({ itemID, smort }: CardProps) => {
   interface DataItem {
     id: number;
     name: string;
@@ -88,6 +89,7 @@ const Converter = ({ itemID }: CardProps) => {
       {/* <ClientCard src={src} category={category} id={idTag} /> */}
       <ClientFetch
         params={{ id: idTag, catagory: category }}
+        smort={smort}
         source={
           specificItem?.src ||
           "https://static.wikia.nocookie.net/starwars/images/b/b0/Tatooine_TPM.png"

@@ -8,21 +8,22 @@ interface CardProps {
   climate?: string;
 }
 
-const Card = ({ itemID, src, name, climate }: CardProps) => {
+const Carde = ({ itemID, src, name, climate }: CardProps) => {
   //const isFavorited = favItems.includes(itemID);
 
   return (
     <>
       <a href={`/details?query=${itemID}`}>
-        <div className="card lg:card-side shadow-xl bg-zinc-600">
+        <div className="mt-4 h-96 card shadow-xl w-72 bg-slate-700">
           <figure>
-            <img src={src} alt="Item" />
+            <img src={src} className="rounded-md mt-4" alt="Item" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">{name}</h2>
-
-            <div className="card-actions justify-end">
-              <FavoriteButton id={itemID} />
+            <div className="card-actions flex items-center justify-between">
+              <div>{name}</div>
+              <div>
+                <FavoriteButton id={itemID} />
+              </div>
             </div>
           </div>
         </div>
@@ -31,4 +32,4 @@ const Card = ({ itemID, src, name, climate }: CardProps) => {
   );
 };
 
-export default Card;
+export default Carde;
